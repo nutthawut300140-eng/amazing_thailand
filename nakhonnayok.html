@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภาคกลาง : จังหวัดนครนายก — Amazing Thailand ไม่ไปไม่รู้</title>
+  
+  <!-- Google Fonts: Sarabun & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN พร้อม Custom Color Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'hunter-green': '#386641',
+            'sage-green': '#6a994e',
+            'yellow-green': '#a7c957',
+            'vanilla-cream': '#f2e8cf',
+            'blushed-brick': '#bc4749',
+            nature: {
+              50: '#FAF7F0',
+              100: '#F2E8CF',
+              200: '#E2D4B5',
+              300: '#A7C957',
+              500: '#6A994E',
+              700: '#386641',
+              800: '#284B2F',
+              900: '#1B3420',
+            },
+            brick: {
+              DEFAULT: '#BC4749',
+              dark: '#9E3537',
+              light: '#F9EAEB'
+            }
+          },
+          fontFamily: {
+            sans: ['Sarabun', 'sans-serif'],
+            display: ['Prompt', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS สำหรับระบบดีไซน์ "ป้ายประชาสัมพันธ์ & Editorial Magazine" -->
+  <style>
+    :root {
+      --hunter-green: #386641ff;
+      --sage-green: #6a994eff;
+      --yellow-green: #a7c957ff;
+      --vanilla-cream: #f2e8cfff;
+      --blushed-brick: #bc4749ff;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #FAF7F0;
+      color: #284B2F;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Prompt', sans-serif;
+    }
+    .bg-topo {
+      background-color: #FAF7F0;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85 M20 0 Q 5 30, 25 60 T 20 120 M90 0 Q 110 40, 85 80 T 90 120' fill='none' stroke='%23386641' stroke-width='1' stroke-opacity='0.06'/%3E%3C/svg%3E");
+    }
+    .bg-topo-cream {
+      background-color: #F2E8CF;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85' fill='none' stroke='%23386641' stroke-width='1.2' stroke-opacity='0.08'/%3E%3C/svg%3E");
+    }
+    .signboard-card {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 6px 6px 0px #386641;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .signboard-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 9px 9px 0px #BC4749;
+    }
+    .signboard-card-static {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 7px 7px 0px #386641;
+      position: relative;
+    }
+    .sign-bolt {
+      width: 9px;
+      height: 9px;
+      border-radius: 9999px;
+      background-color: #F2E8CF;
+      border: 2px solid #386641;
+      display: inline-block;
+    }
+    .km-milestone {
+      border-radius: 9999px 9999px 14px 14px;
+      border: 2.5px solid #386641;
+      background: #F2E8CF;
+      box-shadow: 4px 4px 0px #386641;
+      overflow: hidden;
+    }
+    .highway-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      background-color: #386641;
+      color: #F2E8CF;
+      border: 2px solid #F2E8CF;
+      outline: 2px solid #386641;
+      border-radius: 6px;
+      font-family: 'Prompt', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+    .ticket-notch {
+      position: relative;
+    }
+    .ticket-notch::before,
+    .ticket-notch::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #F2E8CF;
+      border: 2.5px solid #386641;
+      border-radius: 9999px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .ticket-notch::before { left: -12px; }
+    .ticket-notch::after { right: -12px; }
+    .rubber-stamp {
+      border: 2.5px dashed #BC4749;
+      color: #BC4749;
+      transform: rotate(-5deg);
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-slide {
+      animation: fadeSlideUp 0.32s ease-out forwards;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    @media (max-width: 640px) {
+      .signboard-card {
+        box-shadow: 4px 4px 0px #386641;
+      }
+      .signboard-card-static {
+        box-shadow: 5px 5px 0px #386641;
+      }
+      .ticket-notch::before,
+      .ticket-notch::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-topo text-nature-800 antialiased flex flex-col min-h-screen overflow-x-hidden selection:bg-yellow-green selection:text-hunter-green">
+
+  <!-- =========================================================================
+       0. TOP HIGHWAY SIGNBOARD BAR
+       ========================================================================= -->
+  <div class="bg-hunter-green text-vanilla-cream border-b-2 border-yellow-green/40 py-2 px-4 text-xs font-heading">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-blushed-brick text-white font-bold uppercase text-[10px]">REGION 03 : CENTRAL</span>
+        <span class="font-medium">ป้ายประชาสัมพันธ์ภาคกลาง • <strong class="text-yellow-green">จังหวัดนครนายก</strong></span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-vanilla-cream/90">
+        <span><i class="fa-solid fa-road text-yellow-green mr-1"></i> ทางหลวงแผ่นดิน ทล. 305 & ทล. 33</span>
+        <span>|</span>
+        <span><i class="fa-solid fa-location-dot text-blushed-brick mr-1"></i> ระยะทางจาก กทม. 105 กม.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1. NAVBAR SECTION
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-nature-50/95 backdrop-blur-md border-b-2 border-hunter-green transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-2">
+        
+        <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+          <a href="index.html" class="px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-hunter-green hover:bg-blushed-brick text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] font-heading text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 sm:gap-2 shrink-0 transition-all focus:outline-none">
+            <i class="fa-solid fa-arrow-left text-xs sm:text-sm"></i>
+            <span>กลับหน้าหลัก</span>
+          </a>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+              <span class="text-base sm:text-xl font-extrabold font-heading text-hunter-green tracking-tight leading-tight truncate">
+                ภาคกลาง : <span class="text-blushed-brick">นครนายก</span>
+              </span>
+              <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-heading font-bold bg-vanilla-cream border border-hunter-green text-hunter-green rounded shrink-0">กม. 105</span>
+            </div>
+            <span class="text-[11px] sm:text-xs tracking-wider text-sage-green font-heading font-semibold block truncate">Amazing Thailand</span>
+          </div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-6 font-heading text-sm font-semibold text-hunter-green" aria-label="เมนูหน้านครนายก">
+          <a href="#hero" class="hover:text-blushed-brick transition-colors py-1">หน้าแรก</a>
+          <a href="#transport" class="hover:text-blushed-brick transition-colors py-1">การเดินทาง</a>
+          <a href="#districts" class="hover:text-blushed-brick transition-colors py-1">ป้าย 4 อำเภอ</a>
+          <a href="#routes" class="hover:text-blushed-brick transition-colors py-1">รูทแนะนำ</a>
+          <a href="#gallery" class="hover:text-blushed-brick transition-colors py-1">โปสการ์ด</a>
+          <a href="#contact" class="hover:text-blushed-brick transition-colors py-1">ศูนย์ข้อมูล</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-2">
+          <a href="loei.html" class="px-3.5 py-2 rounded-xl bg-vanilla-cream hover:bg-yellow-green/50 text-hunter-green border-2 border-hunter-green font-heading text-xs font-bold shadow-[2px_2px_0px_#386641] transition"><i class="fa-solid fa-chevron-left mr-1"></i> ภาคอีสาน (เลย)</a>
+          <a href="chonburi.html" class="px-3.5 py-2 rounded-xl bg-blushed-brick hover:bg-brick-dark text-white font-heading text-xs font-bold border-2 border-hunter-green shadow-[3px_3px_0px_#386641] transition">ภาคตะวันออก (ชลบุรี) <i class="fa-solid fa-chevron-right ml-1"></i></a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobileMenuBtn" type="button" aria-label="เปิดเมนูนำทาง" aria-expanded="false" class="p-2.5 rounded-xl bg-vanilla-cream border-2 border-hunter-green text-hunter-green hover:bg-yellow-green/40 focus:outline-none">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t-2 border-hunter-green bg-vanilla-cream px-5 pt-4 pb-6 space-y-2.5 font-heading shadow-2xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-blushed-brick hover:bg-white"><i class="fa-solid fa-house mr-2"></i>กลับหน้าแรกแคมเปญ</a>
+      <a href="#hero" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">หน้าแรกจังหวัดนครนายก</a>
+      <a href="#transport" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">คู่มือการเดินทางสู่นครนายก</a>
+      <a href="#districts" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">สำรวจเจาะลึก 4 อำเภอ</a>
+      <a href="#routes" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ตารางจัดรูทท่องเที่ยว</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">โปสการ์ดภาพบรรยากาศ</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ศูนย์ข้อมูลท่องเที่ยว</a>
+      <div class="pt-3 border-t-2 border-dashed border-hunter-green/30 grid grid-cols-2 gap-2">
+        <a href="chiangmai.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🌲 เหนือ: เชียงใหม่</a>
+        <a href="loei.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">⛰️ อีสาน: เลย</a>
+        <a href="chonburi.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🌊 ตะวันออก: ชลบุรี</a>
+        <a href="prachuap.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🏖️ ตะวันตก: ประจวบฯ</a>
+        <a href="krabi.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold col-span-2 text-center">🏝️ ใต้: กระบี่</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- =========================================================================
+         2. HERO SECTION (ป้ายประชาสัมพันธ์จังหวัดนครนายก)
+         ========================================================================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-vanilla-cream/85 via-transparent to-transparent pt-8 pb-16 lg:pt-12 lg:pb-24 border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-8 border-b-2 border-hunter-green text-xs font-heading font-bold text-hunter-green">
+          <div class="flex items-center gap-2">
+            <span class="highway-badge"><i class="fa-solid fa-road"></i> ทล. 305 (รังสิต-นครนายก) / ทล. 33</span>
+            <span>คู่มือป้ายประชาสัมพันธ์ประจำจังหวัดนครนายก</span>
+          </div>
+          <span class="text-blushed-brick">● CENTRAL REGION REPRESENTATIVE</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-5 min-w-0">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[4px_4px_0px_#BC4749]">
+              <span class="sign-bolt"></span>
+              <span class="font-heading text-xs sm:text-sm font-bold text-yellow-green">🍃 ตัวแทนภาคกลาง • Amazing Thailand 1 ภาค 1 จังหวัด</span>
+              <span class="sign-bolt"></span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-hunter-green leading-tight">
+              กรีนแลนด์ใกล้กรุง มรดกโลกเขาใหญ่ <br>
+              <span class="inline-block mt-1 px-4 py-1 bg-blushed-brick text-vanilla-cream rounded-2xl border-2 border-hunter-green shadow-[5px_5px_0px_#386641]">
+                จังหวัดนครนายก
+              </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-nature-800 leading-relaxed max-w-2xl">
+              หลีกหนีความวุ่นวายแล้วออกเดินทางสู่โอเอซิสสีเขียวใกล้กรุง เพียงชั่วโมงเศษก็จะได้สูดอากาศบริสุทธิ์ให้เต็มปอด! สัมผัสความมหัศจรรย์ของธรรมชาติผืนป่ามรดกโลก <strong class="text-hunter-green font-bold">ครอบคลุมทั้ง 4 อำเภอ</strong> ตั้งแต่ล่องเรือชมทุ่งหญ้าและสายน้ำเขาช่องลมในเขื่อนขุนด่านปราการชล กราบขอพรวังพญานาควัดมณีวงศ์ กางเต็นท์ฟังเสียงน้ำตก พายคายัคอ่างเก็บน้ำวังบอน ไปจนถึงลิ้มรสมะยงชิด GI หวานฉ่ำสดจากสวน!
+            </p>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+              <a href="#districts" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-blushed-brick hover:bg-brick-dark text-white font-heading font-bold border-2 border-hunter-green shadow-[5px_5px_0px_#386641] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all">
+                <i class="fa-solid fa-signs-post"></i>
+                <span>เปิดป้ายสำรวจ 4 อำเภอ</span>
+              </a>
+              <a href="#transport" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green font-heading font-bold shadow-[5px_5px_0px_#6A994E] transition-all">
+                <i class="fa-solid fa-car-side text-blushed-brick"></i>
+                <span>ดูวิธีเดินทางไปนครนายก</span>
+              </a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-3 gap-2.5 sm:gap-3 max-w-lg">
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#386641] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-hunter-green">4 อำเภอ</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">เที่ยวง่าย ใกล้กรุง</p>
+              </div>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-blushed-brick">1.5 ชม.</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">ขับรถจากกรุงเทพฯ</p>
+              </div>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#6A994E] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-hunter-green">มะยงชิด GI</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">ผลไม้ชื่อดังระดับประเทศ</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Signboard Showcase (Interactive Carousel) + KM Milestone -->
+          <div class="lg:col-span-5 relative w-full min-w-0">
+            <div class="signboard-card-static rounded-3xl p-2.5 sm:p-4 bg-vanilla-cream w-full">
+              <div class="flex items-center justify-between px-3 py-2 mb-2.5 sm:mb-3 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold">
+                <span class="sign-bolt"></span>
+                <span><i class="fa-solid fa-leaf text-yellow-green mr-1.5"></i> ป้ายทัศนียภาพเขาช่องลม • NAKHON NAYOK</span>
+                <span class="sign-bolt"></span>
+              </div>
+
+              <!-- กรอบรูปสไลเดอร์ย่อ-ขยายตามหน้าจอ พร้อมเลื่อนดูได้ 4 มุมมอง -->
+              <div id="heroSliderContainer" class="relative w-full rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3.8] xl:aspect-[4/3.6] border-2 border-hunter-green group select-none bg-hunter-green/10">
+                
+                <!-- Slide 1 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-100 pointer-events-auto" data-index="0" data-region="🍃 เขาช่องลม & เขื่อนขุนด่านฯ">
+                  <img 
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" 
+                    alt="ทุ่งหญ้าสีเขียวขจีและลำธารต้นน้ำ เขาช่องลม จังหวัดนครนายก" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Nakhon+Nayok';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-sparkles mr-1"></i> เสน่ห์เมืองต้องห้ามพลาด</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“วันหยุดเสาร์-อาทิตย์ ถ้าอยากสูดโอโซนบริสุทธิ์ ล่องเรือเขาช่องลม กินปลาช่อนเผาฟาง นครนายกคือคำตอบอันดับ 1!”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="1" data-region="💦 น้ำตกสาริกา & น้ำตกนางรอง">
+                  <img 
+                    src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=900&q=80" 
+                    alt="น้ำตกสาริกาและน้ำตกนางรอง นครนายก" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/6A994E/F2E8CF?text=Sarika+Waterfall';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-water mr-1"></i> สายน้ำแห่งผืนป่าเขาใหญ่</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“สดชื่นไปกับสายน้ำตกสาริกา 9 ชั้น น้ำตกนางรอง วังตะไคร้ และเดินป่าชมเห็ดแชมเปญสีส้มสดที่น้ำตกโกรกอีดก”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="2" data-region="⛺ แคมป์ปิ้งอ่างเก็บน้ำทรายทอง & วังบอน">
+                  <img 
+                    src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=80" 
+                    alt="แคมป์ปิ้งอ่างเก็บน้ำทรายทองและวังบอน นครนายก" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/BC4749/F2E8CF?text=Camping+Nakhon+Nayok';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-campground mr-1"></i> สวรรค์คนรักแคมป์ปิ้งใกล้กรุง</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“กางเต็นท์ริมน้ำชมสายหมอกยามเช้าที่อ่างเก็บน้ำห้วยปรือ-ทรายทอง และพายคายัคชมน้ำตกริมอ่างเก็บน้ำวังบอน”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="3" data-region="☕ คาเฟ่ฟาร์ม & ทุ่งนานครนายก">
+                  <img 
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" 
+                    alt="ทุ่งนาและฟาร์มคาเฟ่นครนายก" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Farm+Cafe';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-mug-hot mr-1"></i> ฟาร์มคาเฟ่ & มะยงชิด GI</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“เช็กอินคาเฟ่สะพานไม้กลางทุ่งนา ช้อปต้นไม้คลอง 15 และชิมมะยงชิด GI ลูกโตหวานฉ่ำสดจากสวน”</p>
+                  </div>
+                </div>
+
+                <!-- Top Floating Badges -->
+                <div class="absolute top-2.5 left-2.5 right-2.5 sm:top-3 sm:left-3 sm:right-3 flex items-center justify-between z-20 pointer-events-none">
+                  <span id="heroSlideRegionBadge" class="pointer-events-auto px-2.5 sm:px-3 py-1 rounded-xl bg-hunter-green/90 backdrop-blur-md text-vanilla-cream font-heading text-[11px] sm:text-xs font-bold border-2 border-yellow-green/50 shadow-md truncate max-w-[70%]">
+                    🍃 เขาช่องลม & เขื่อนขุนด่านฯ
+                  </span>
+                  <span id="heroSlideCounter" class="pointer-events-auto px-2 sm:px-2.5 py-1 rounded-xl bg-black/60 backdrop-blur-md text-vanilla-cream font-heading font-bold text-[11px] sm:text-xs border border-white/20">
+                    1 / 4
+                  </span>
+                </div>
+
+                <!-- Prev & Next Buttons -->
+                <button id="heroPrevBtn" type="button" aria-label="ดูภาพก่อนหน้า" class="absolute left-2 sm:left-2.5 top-[42%] -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-white text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 cursor-pointer">
+                  <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
+                </button>
+                <button id="heroNextBtn" type="button" aria-label="ดูภาพถัดไป" class="absolute right-2 sm:right-2.5 top-[42%] -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-white text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 cursor-pointer">
+                  <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
+                </button>
+
+                <!-- 4 Dots Navigation Indicator -->
+                <div id="heroDotsList" class="absolute top-11 sm:top-12 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20 bg-black/40 backdrop-blur-md px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full border border-white/20">
+                  <button type="button" class="hero-dot w-5 h-2 rounded-full bg-yellow-green transition-all cursor-pointer" data-index="0" aria-label="สไลด์ 1"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="1" aria-label="สไลด์ 2"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="2" aria-label="สไลด์ 3"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="3" aria-label="สไลด์ 4"></button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="hidden sm:flex km-milestone w-24 lg:w-28 flex-col items-center text-center absolute -top-5 right-4 lg:top-16 lg:right-auto lg:-left-6 z-30">
+              <div class="w-full bg-blushed-brick text-white py-1 border-b-2 border-hunter-green font-heading">
+                <p class="text-[10px] font-bold">ทล. 305</p>
+              </div>
+              <div class="py-1.5 lg:py-2 px-2 font-heading">
+                <p class="text-[10px] font-bold text-sage-green">นครนายก</p>
+                <p class="text-xl lg:text-2xl font-extrabold text-hunter-green leading-tight">105</p>
+                <p class="text-[10px] font-bold text-hunter-green">กม. จาก กทม.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. TRANSPORTATION GUIDE SECTION
+         ========================================================================= -->
+    <section id="transport" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-route"></i> TRANSPORTATION GUIDE</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">การเดินทางสู่นครนายก สะดวกยังไง ไปยังไง?</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ทล. 305</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">1. รถยนต์ (สายรังสิต-นครนายก)</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              วิ่งตรงตามทางหลวงหมายเลข 305 (รังสิต-นครนายก) ผ่านคลองธัญบุรีและอำเภอองครักษ์ ถนน 4-6 เลนตลอดสาย ใช้เวลาเพียง 1.5 ชั่วโมง
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-sage-green text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-road"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ทล. 1 + ทล. 33</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">2. รถยนต์ (สายพหลโยธิน-บ้านนา)</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              วิ่งถนนพหลโยธิน (ทล.1) เลี้ยวขวาที่หินกองเข้าถนนสุวรรณศร (ทล.33) เข้าสู่อำเภอบ้านนาและตัวเมืองนครนายก เหมาะกับสายแคมป์ปิ้งอ่างเก็บน้ำ
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-van-shuttle"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ออกทุก 40 นาที</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">3. รถตู้ & มินิบัสโดยสาร</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ขึ้นรถตู้/มินิบัสได้ที่สถานีเดินรถโดยสารขนาดเล็ก (หมอชิต 2) หรือท่ารถข้างฟิวเจอร์พาร์ค รังสิต ลงที่ บขส.นครนายก หรือหน้าเขื่อนขุนด่านฯ
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">เรือหางยาว</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">4. เรือชมเขาช่องลม & ATV</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              บนสันเขื่อนขุนด่านปราการชล มีจุดบริการ <strong>เรือหางยาวนำเที่ยวเขาช่องลม</strong> ออกตลอดวัน (คนละ 200 บาท) และมีศูนย์เช่า ATV ขับลุยลำธาร
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. INTERACTIVE 4 DISTRICTS EXPLORER (ป้ายเจาะลึกครบ 4 อำเภอนครนายก)
+         ========================================================================= -->
+    <section id="districts" class="py-20 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold uppercase shadow-[3px_3px_0px_#BC4749]">
+            <span class="sign-bolt"></span>
+            <span>Complete 4 Districts Signboard Directory</span>
+            <span class="sign-bolt"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-hunter-green">
+            ป้ายข้อมูลเจาะลึกจังหวัดนครนายก
+          </h2>
+        </div>
+
+        <div class="signboard-card-static p-5 sm:p-6 rounded-3xl bg-white mb-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 pb-4 border-b-2 border-dashed border-hunter-green/25">
+            <div>
+              <span class="font-heading font-extrabold text-hunter-green text-base flex items-center gap-2">
+                <i class="fa-solid fa-signs-post text-blushed-brick"></i> ป้ายบอกทางทั้ง 4 อำเภอของจังหวัดนครนายก:
+              </span>
+            </div>
+
+            <div class="relative w-full md:w-80">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-green text-sm"></i>
+              <input 
+                id="districtSearchInput" 
+                type="text" 
+                placeholder="ค้นหาอำเภอ, เขาช่องลม, มะยงชิด, คาเฟ่..." 
+                class="w-full pl-9 pr-4 py-2 rounded-xl bg-vanilla-cream/60 border-2 border-hunter-green text-xs sm:text-sm font-heading text-hunter-green placeholder:text-hunter-green/50 focus:outline-none focus:bg-white"
+              >
+            </div>
+          </div>
+
+          <div id="districtButtonsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+        </div>
+
+        <!-- ปุ่มกรองหมวดหมู่ + ปุ่มเลื่อนอำเภอ -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <div class="flex flex-wrap gap-2">
+            <button type="button" data-cat="all" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition">แสดงครบทั้ง 4 หมวด</button>
+            <button type="button" data-cat="attraction" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏞️ ที่เที่ยว & วัด</button>
+            <button type="button" data-cat="food" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🍜 ร้านอาหาร & ของฝาก</button>
+            <button type="button" data-cat="cafe" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">☕ คาเฟ่แนะนำ</button>
+            <button type="button" data-cat="hotel" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏨 ที่พักแนะนำ</button>
+          </div>
+
+          <div class="flex items-center gap-2 font-heading">
+            <button id="prevDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              <i class="fa-solid fa-chevron-left mr-1"></i> อำเภอก่อนหน้า
+            </button>
+            <span id="distCounterBadge" class="px-3 py-1.5 rounded-xl bg-hunter-green text-yellow-green text-xs font-extrabold border-2 border-hunter-green">
+              1 / 4
+            </span>
+            <button id="nextDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              อำเภอถัดไป <i class="fa-solid fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- กล่องป้ายแสดงรายละเอียดของอำเภอที่เลือก -->
+        <div id="districtDetailBoard" class="signboard-card-static ticket-notch rounded-3xl overflow-hidden bg-white">
+          <div class="bg-hunter-green text-vanilla-cream p-6 sm:p-8 border-b-2 border-hunter-green flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div>
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span id="distZoneBadge" class="px-3 py-0.5 rounded-md bg-yellow-green text-hunter-green font-heading text-xs font-extrabold uppercase"></span>
+                <span class="px-2.5 py-0.5 rounded-md bg-white/15 text-vanilla-cream font-heading text-xs font-semibold">NAKHON NAYOK GUIDE</span>
+              </div>
+              <h3 id="distNameTitle" class="text-2xl sm:text-3xl font-extrabold font-heading text-white"></h3>
+              <p id="distSlogan" class="text-sm sm:text-base text-yellow-green font-heading font-medium mt-1"></p>
+            </div>
+            <div class="bg-vanilla-cream text-hunter-green px-5 py-3.5 rounded-2xl border-2 border-yellow-green lg:max-w-sm shrink-0 shadow-md">
+              <p class="text-xs font-heading font-extrabold text-blushed-brick uppercase"><i class="fa-solid fa-compass mr-1"></i> ทิปส์การเดินทาง</p>
+              <p id="distTip" class="text-xs sm:text-sm font-medium text-hunter-green mt-1 leading-snug"></p>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-nature-50">
+            <article data-card-cat="attraction" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#386641] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-water"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Attractions & Waterfalls</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏞️ สถานที่ท่องเที่ยว & วัดดัง</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distAttraction" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="food" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#BC4749] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-utensils"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-blushed-brick uppercase block">Local Food & GI Fruit</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🍜 ร้านอาหารเด็ด & ของฝาก</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distFood" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="cafe" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#6A994E] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-sage-green text-white flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-mug-saucer"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Garden & Stream Cafes</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">☕ คาเฟ่ริมน้ำ & ทุ่งนา</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distCafe" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="hotel" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#A7C957] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-bed"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-hunter-green uppercase block">Where to Stay</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏨 ที่พัก รีสอร์ท & แคมป์ปิ้ง</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distHotel" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. RECOMMENDED TRAVEL ROUTES SECTION
+         ========================================================================= -->
+    <section id="routes" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-map-signs"></i> SMART ITINERARY PASS</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">ป้ายจัดรูทเที่ยวนครนายกครบ 4 อำเภอ</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-hunter-green text-yellow-green font-heading text-xs font-bold">รูทที่ 1 : ไฮไลต์ธรรมชาติ & สายมู</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">องครักษ์ ➔ เมืองนครนายก</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              แวะจิบกาแฟมองเทรอส์ฟาร์ม (องครักษ์) ไหว้วังพญานาควัดมณีวงศ์ ล่องเรือชมเขาช่องลมในเขื่อนขุนด่านฯ และเล่นน้ำตกสาริกา-นางรอง
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-blushed-brick text-white font-heading text-xs font-bold">รูทที่ 2 : สายแคมป์ปิ้ง & ลุยป่า</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">บ้านนา ➔ ปากพลี</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              เดินป่าชมเห็ดแชมเปญน้ำตกโกรกอีดก ชมวิวอ่างเก็บน้ำห้วยปรือ-ทรายทอง (บ้านนา) แล้วไปพายเรือคายัคชมน้ำตกริมอ่างเก็บน้ำวังบอน (ปากพลี)
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-sage-green text-white font-heading text-xs font-bold">รูทที่ 3 : สายครอบครัว & ช้อปต้นไม้</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">องครักษ์ ➔ บ้านนา ➔ เมือง</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ช้อปต้นไม้คลอง 15 ทานปลาช่อนเผาฟางครัวลุงกัง ขับ ATV ลุยลำธาร และแวะซื้อกะหรี่ปั๊บบ้านนาพร้อมมะยงชิด GI กลับบ้าน
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. GALLERY SECTION
+         ========================================================================= -->
+    <section id="gallery" class="py-16 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="highway-badge mb-2"><i class="fa-solid fa-camera"></i> POSTCARD GALLERY</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">โปสการ์ดภาพบรรยากาศจังหวัดนครนายก</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🍃 ทุ่งหญ้าและลำธารต้นน้ำ เขาช่องลม เขื่อนขุนด่านปราการชล นครนายก">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="เขาช่องลม เขื่อนขุนด่านปราการชล นครนายก" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Khao+Chong+Lom';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🍃 เขาช่องลม เขื่อนขุนด่านฯ</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="💦 น้ำตกสาริกาและน้ำตกนางรอง อำเภอเมืองนครนายก">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80" alt="น้ำตกสาริกาและน้ำตกนางรอง นครนายก" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/6A994E/F2E8CF?text=Sarika+Waterfall';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>💦 น้ำตกสาริกา-นางรอง</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="⛺ อ่างเก็บน้ำทรายทองและอ่างเก็บน้ำวังบอน นครนายก">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="แคมป์ปิ้งอ่างเก็บน้ำทรายทองและวังบอน นครนายก" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/BC4749/F2E8CF?text=Camping+Nakhon+Nayok';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>⛺ แคมป์ปิ้งริมอ่างเก็บน้ำ</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="☕ คาเฟ่ฟาร์มและสะพานไม้กลางทุ่งนา จังหวัดนครนายก">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="ทุ่งนาและฟาร์มคาเฟ่นครนายก" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Farm+Cafe';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>☕ คาเฟ่ทุ่งนานครนายก</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CONTACT & LOCATION SECTION (Placeholder)
+         ========================================================================= -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="highway-badge !bg-blushed-brick">TOURIST INFORMATION</span>
+            <h2 class="text-2xl font-extrabold font-heading text-hunter-green">ศูนย์บริการข้อมูลท่องเที่ยวจังหวัดนครนายก</h2>
+            <!-- PLACEHOLDER: แก้ไขที่อยู่และเบอร์โทรศัพท์จริงได้ที่นี่ -->
+            <div class="signboard-card p-5 rounded-2xl bg-vanilla-cream/50 space-y-2">
+              <p class="text-sm text-nature-800 leading-relaxed">
+                <strong>การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานนครนายก :</strong><br>
+                182/88 หมู่ 1 ถนนสุวรรณศร ตำบลท่าช้าง อำเภอเมืองนครนายก จังหวัดนครนายก 26000
+              </p>
+              <p class="text-sm text-hunter-green font-bold">
+                <i class="fa-solid fa-phone text-blushed-brick mr-2"></i> โทร: 037-312-282 หรือ สายด่วน ททท. 1672
+              </p>
+            </div>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-hunter-green hover:bg-blushed-brick text-vanilla-cream font-heading text-xs font-bold border-2 border-hunter-green transition">
+                <i class="fa-solid fa-arrow-left"></i> กลับหน้าหลักรวม 6 ภาค
+              </a>
+              <a href="chonburi.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vanilla-cream hover:bg-yellow-green text-hunter-green font-heading text-xs font-bold border-2 border-hunter-green transition">
+                ไปต่อภาคตะวันออก (จ.ชลบุรี) <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7 signboard-card-static p-4 rounded-3xl bg-vanilla-cream">
+            <div class="w-full h-72 rounded-2xl overflow-hidden border-2 border-hunter-green">
+              <!-- PLACEHOLDER: แผนที่จังหวัดนครนายก -->
+              <iframe 
+                title="แผนที่จังหวัดนครนายก" 
+                src="https://maps.google.com/maps?q=Nakhon+Nayok+Thailand&t=&z=10&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-nature-900/90 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="max-w-3xl w-full bg-vanilla-cream rounded-3xl p-4 border-4 border-hunter-green shadow-2xl">
+      <div class="flex items-center justify-between pb-3 mb-3 border-b-2 border-hunter-green">
+        <span id="lightboxCaption" class="font-heading font-bold text-sm sm:text-base text-hunter-green"></span>
+        <button id="closeLightboxBtn" type="button" class="w-9 h-9 rounded-xl bg-blushed-brick text-white font-bold flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="rounded-2xl overflow-hidden border-2 border-hunter-green max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="ภาพขยาย" class="w-full h-full object-contain bg-nature-900">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       ========================================================================= -->
+  <footer class="bg-hunter-green text-vanilla-cream py-10 border-t-4 border-blushed-brick">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <!-- PLACEHOLDER: แก้ไขเครดิตผู้จัดทำได้ที่นี่ -->
+      <p>© 2026 Amazing Thailand 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ — ภาคกลาง จังหวัดนครนายก</p>
+      <div class="flex flex-wrap gap-3 font-heading font-semibold">
+        <a href="index.html" class="hover:text-yellow-green">หน้าหลัก</a>
+        <span>•</span>
+        <a href="chiangmai.html" class="hover:text-yellow-green">เชียงใหม่</a>
+        <span>•</span>
+        <a href="loei.html" class="hover:text-yellow-green">เลย</a>
+        <span>•</span>
+        <a href="chonburi.html" class="hover:text-yellow-green">ชลบุรี</a>
+        <span>•</span>
+        <a href="prachuap.html" class="hover:text-yellow-green">ประจวบฯ</a>
+        <span>•</span>
+        <a href="krabi.html" class="hover:text-yellow-green">กระบี่</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. VANILLA JAVASCRIPT (ฐานข้อมูลครบ 4 อำเภอนครนายก + การ์ดย่อย Badge + ค้นหาด่วน)
+       ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      let isMenuOpen = false;
+
+      const toggleMenu = () => {
+        isMenuOpen = !isMenuOpen;
+        mobileMenu.classList.toggle('hidden', !isMenuOpen);
+        menuIcon.classList.toggle('fa-bars', !isMenuOpen);
+        menuIcon.classList.toggle('fa-xmark', isMenuOpen);
+      };
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+      document.querySelectorAll('.mobile-nav-link').forEach(l => l.addEventListener('click', () => { if (isMenuOpen) toggleMenu(); }));
+
+      // 2. ข้อมูลเจาะลึกครบทั้ง 4 อำเภอของจังหวัดนครนายก
+      const districtsData = [
+        {
+          id: 1, name: '1. อ.เมืองนครนายก', zone: 'โซนเขื่อนยักษ์ น้ำตกดัง & สายมู',
+          slogan: 'เขื่อนขุนด่านปราการชล ล่องเรือเขาช่องลม วังพญานาควัดมณีวงศ์ และแอดเวนเจอร์',
+          tip: 'การล่องเรือชมเขาช่องลมแนะนำไปช่วงเช้าตรู่ (07.00 - 09.00 น.) แดดไม่ร้อน แสงสวย และไม่ต้องรอคิวเรือนาน',
+          attraction: 'เขื่อนขุนด่านปราการชล (เขื่อนคอนกรีตบดอัดยาวที่สุดในโลก), เขาช่องลม (นั่งเรือหางยาวชมทุ่งหญ้ากรีนแลนด์เมืองไทย Unseen), วัดมณีวงศ์ (ถ้ำวังพญานาคพันตัวสุดอลังการ), น้ำตกสาริกา, น้ำตกนางรอง, อุทยานวังตะไคร้, อุทยานพระพิฆเนศ, ซุ้มป่าไผ่วัดจุฬาภรณ์วนาราม และกิจกรรมล่องแก่งเรือยาง-ขับ ATV',
+          food: 'ครัวลุงกัง (ปลาช่อนเผาฟาง ต้มยำพวงไข่อ่อน), ไก่ย่างดีดี (ไก่ย่างหนังกรอบสูตรเด็ด), ครัวสาริกา และของฝาก GI "มะยงชิดนครนายก" (ลูกใหญ่เท่าไข่ไก่ หวานอมเปรี้ยว)',
+          cafe: 'Klang Na Cafe (กลางนาคาเฟ่ สะพานไม้กลางทุ่งนา), Bittersweet Nakhon Nayok (กลาสเฮาส์เจลาโตโฮมเมด), Rimntara Camping & Cafe (เอาเท้าจุ่มน้ำในลำธาร) และ Fourbuta Cafe',
+          hotel: 'The Forest Home Resort, At Rice Resort (ดีไซน์สวยวิวทุ่งนา), สีดารีสอร์ท และ บ้านป่าริมน้ำ รีสอร์ท (พักติดลำธารเล่นน้ำได้หน้าห้อง)'
+        },
+        {
+          id: 2, name: '2. อ.บ้านนา', zone: 'โซนอ่างเก็บน้ำสายหมอก & เดินป่า',
+          slogan: 'สวิตเซอร์แลนด์เมืองไทยอ่างเก็บน้ำห้วยปรือ-ทรายทอง และน้ำตกโกรกอีดก',
+          tip: 'ถนนเลียบสันอ่างเก็บน้ำห้วยปรือช่วงเช้าหลังฝนตกจะมีสายหมอกลอยเหนือน้ำ เป็นจุดวิ่งและปั่นจักรยานที่สวยมาก',
+          attraction: 'อ่างเก็บน้ำห้วยปรือ & อ่างเก็บน้ำทรายทอง (จุดชมวิวทิวเขาและกางเต็นท์ริมน้ำ), น้ำตกโกรกอีดก (เส้นทางเดินป่าชมเห็ดแชมเปญสีส้มสดใส Unseen), น้ำตกกะอาง, วัดศรีกะอาง และทุ่งบัวแดงบ้านนา',
+          food: 'ก๋วยเตี๋ยวต้มยำโบราณบ้านนา, ร้านอาหารประจักษ์เบเกอรี่ และของฝากขึ้นชื่อ "ขนมกะหรี่ปั๊บ & ขนมเปี๊ยะบ้านนา" แป้งบางกรอบไส้แน่น',
+          cafe: 'Lamun Cafe Ban Na (ละมุน คาเฟ่บ้านไม้สีขาวมินิมอล) และ Nakhao Cafe (นาเขา คาเฟ่วิวพาโนรามาทุ่งนาและภูเขา)',
+          hotel: 'ขุนเขาแลนด์ รีสอร์ท บ้านนา และ ลานกางเต็นท์ริมอ่างเก็บน้ำทรายทอง'
+        },
+        {
+          id: 3, name: '3. อ.องครักษ์', zone: 'โซนไม้ดอกไม้ประดับ & คาเฟ่ฟาร์ม',
+          slogan: 'ถนนสายต้นไม้คลอง 15 ใหญ่ที่สุดในไทย และฟาร์มคาเฟ่ขวัญใจครอบครัว',
+          tip: 'เป็นอำเภอแรกเมื่อขับรถเข้ามาจากรังสิต แวะจิบกาแฟและเดินเลือกซื้อต้นไม้ราคาหน้าสวนที่คลอง 15 ได้ตลอดทั้งเส้น',
+          attraction: 'หมู่บ้านไม้ดอกไม้ประดับ คลอง 15 (แหล่งผลิตและจำหน่ายต้นไม้ ไม้ใบ บอนไซ แคคตัสที่ใหญ่ที่สุดในประเทศไทย ยาวกว่า 8 กม.), มหาวิทยาลัยศรีนครินทรวิโรฒ องครักษ์ (มศว) และสวนส้มโอ-มะยงชิดคลอง 16',
+          food: 'ครัวครูน้อม & โฮมสเตย์ คลอง 15 (ปลากะพงทอดน้ำปลา กุ้งแม่น้ำเผา), ก๋วยเตี๋ยวเรือโกฮับ รังสิต-องครักษ์ และบะหมี่เกี๊ยวต้มยำหน้าตลาดองครักษ์',
+          cafe: 'Montreux Cafe & Farm (มองเทรอส์ คาเฟ่ แอนด์ ฟาร์ม มีทุ่งนา พายเรือ ให้อาหารแกะ กิจกรรมครอบครัวครบ), Overdose Cafe & Bar ใกล้ มศว และ กลิ่นกาสะลอง คาเฟ่ คลอง 15',
+          hotel: 'Phutawan Resort Ongkharak (ภูตะวัน รีสอร์ท) และ บ้านสวนคลอง 15 โฮมสเตย์'
+        },
+        {
+          id: 4, name: '4. อ.ปากพลี', zone: 'โซนประตูสู่เขาใหญ่ & วัฒนธรรมไทยพวน',
+          slogan: 'ด่านเนินหอมขึ้นเขาใหญ่ น้ำตกเหวนรก พายคายัควังบอน และวิถีไทยพวน',
+          tip: 'ที่อ่างเก็บน้ำวังบอนสามารถเช่าเรือคายัคพายเข้าไปชมสายน้ำตกวังบอนที่ไหลลงสู่อ่างเก็บน้ำได้ใกล้ชิดมาก',
+          attraction: 'ด่านเนินหอม (ประตูสู่อุทยานแห่งชาติเขาใหญ่ मรดกโลก UNESCO), น้ำตกเหวนรก (น้ำตกขนาดใหญ่หน้าผาสูง 150 เมตร), อ่างเก็บน้ำวังบอน (พายคายัคและกางเต็นท์ริมน้ำ) และพิพิธภัณฑ์พื้นบ้านไทยพวน วัดฝั่งคลอง',
+          food: 'สำรับข้าวแลงไทยพวน บ้านฝั่งคลอง (แกงส้มหยวกกล้วย ปลาร้าสับทรงเครื่อง ข้าวมธุปายาส), ครัวเขาใหญ่ ปากพลี และก๋วยเตี๋ยวต้มยำไข่ย้อยปากพลี',
+          cafe: 'Wang Bon Kayak & Cafe (จิบกาแฟริมอ่างเก็บน้ำวังบอน) และ The Jungle Cafe ปากพลี เชิงดอยเขาใหญ่',
+          hotel: 'ลานกางเต็นท์อ่างเก็บน้ำวังบอน, โฮมสเตย์ชุมชนไทยพวนบ้านฝั่งคลอง และ เนินหอม รีสอร์ท ปากพลี'
+        }
+      ];
+
+      const formatRichList = (text) => {
+        const parts = text.split(/,\s*|\s+และ(?=[^\s])/g).map(s => s.trim()).filter(Boolean);
+        return parts.map((item, i) => {
+          let badgeHtml = '';
+          if (/GI/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-blushed-brick text-white font-heading text-[10px] font-bold uppercase">🌿 สินค้า GI</span>`;
+          } else if (/UNESCO|มรดกโลก/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-hunter-green text-yellow-green font-heading text-[10px] font-bold uppercase">🌍 UNESCO</span>`;
+          } else if (/Unseen|ยาวที่สุด|ใหญ่ที่สุด/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-sage-green text-white font-heading text-[10px] font-bold uppercase">✨ Unseen</span>`;
+          }
+          return `
+            <li class="flex items-start gap-2.5 p-2.5 rounded-xl bg-nature-50 border border-hunter-green/20 hover:bg-vanilla-cream/60 transition">
+              <span class="w-5 h-5 rounded-md bg-hunter-green text-vanilla-cream font-heading text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">${i + 1}</span>
+              <span class="text-xs sm:text-sm text-nature-800 font-medium leading-relaxed">${item}${badgeHtml}</span>
+            </li>
+          `;
+        }).join('');
+      };
+
+      const btnContainer = document.getElementById('districtButtonsContainer');
+      const detailBoard = document.getElementById('districtDetailBoard');
+      const zoneBadge = document.getElementById('distZoneBadge');
+      const nameTitle = document.getElementById('distNameTitle');
+      const sloganEl = document.getElementById('distSlogan');
+      const tipEl = document.getElementById('distTip');
+      const attrEl = document.getElementById('distAttraction');
+      const foodEl = document.getElementById('distFood');
+      const cafeEl = document.getElementById('distCafe');
+      const hotelEl = document.getElementById('distHotel');
+      const counterBadge = document.getElementById('distCounterBadge');
+      const prevBtn = document.getElementById('prevDistBtn');
+      const nextBtn = document.getElementById('nextDistBtn');
+      const searchInput = document.getElementById('districtSearchInput');
+
+      let currentIndex = 0;
+
+      const updateActiveButtonStyles = () => {
+        document.querySelectorAll('.dist-pill').forEach((p, idx) => {
+          p.className = idx === currentIndex
+            ? 'dist-pill w-full px-4 py-3 rounded-xl font-heading text-xs sm:text-sm font-bold transition-all bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] text-center'
+            : 'dist-pill w-full px-4 py-3 rounded-xl font-heading text-xs sm:text-sm font-semibold transition-all bg-vanilla-cream/70 text-hunter-green border-2 border-hunter-green/30 hover:border-hunter-green hover:bg-yellow-green/40 text-center';
+        });
+      };
+
+      const renderDistrict = (idx) => {
+        currentIndex = (idx + districtsData.length) % districtsData.length;
+        const distObj = districtsData[currentIndex];
+
+        detailBoard.classList.remove('animate-fade-slide');
+        void detailBoard.offsetWidth;
+        detailBoard.classList.add('animate-fade-slide');
+
+        zoneBadge.textContent = distObj.zone;
+        nameTitle.textContent = distObj.name;
+        sloganEl.textContent = distObj.slogan;
+        tipEl.textContent = distObj.tip;
+        attrEl.innerHTML = formatRichList(distObj.attraction);
+        foodEl.innerHTML = formatRichList(distObj.food);
+        cafeEl.innerHTML = formatRichList(distObj.cafe);
+        hotelEl.innerHTML = formatRichList(distObj.hotel);
+        counterBadge.textContent = `${currentIndex + 1} / ${districtsData.length}`;
+        updateActiveButtonStyles();
+      };
+
+      districtsData.forEach((d, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = d.name;
+        btn.setAttribute('data-search', `${d.name} ${d.zone} ${d.slogan} ${d.attraction} ${d.food} ${d.cafe} ${d.hotel}`.toLowerCase());
+        btn.addEventListener('click', () => renderDistrict(idx));
+        btnContainer.appendChild(btn);
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', () => renderDistrict(currentIndex - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => renderDistrict(currentIndex + 1));
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.trim().toLowerCase();
+          let firstMatchIdx = -1;
+          document.querySelectorAll('.dist-pill').forEach((btn, idx) => {
+            const match = !q || btn.getAttribute('data-search').includes(q);
+            btn.classList.toggle('hidden', !match);
+            if (match && firstMatchIdx === -1) firstMatchIdx = idx;
+          });
+          if (q && firstMatchIdx !== -1 && firstMatchIdx !== currentIndex) {
+            renderDistrict(firstMatchIdx);
+          }
+        });
+      }
+
+      renderDistrict(0);
+
+      // 4. Category Filter
+      const catBtns = document.querySelectorAll('.cat-filter-btn');
+      const catCards = document.querySelectorAll('.dist-cat-card');
+
+      catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetCat = btn.getAttribute('data-cat');
+          catBtns.forEach(b => {
+            b.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition';
+          });
+          btn.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition';
+
+          catCards.forEach(card => {
+            card.classList.toggle('hidden', !(targetCat === 'all' || card.getAttribute('data-card-cat') === targetCat));
+          });
+        });
+      });
+
+      // 5. Lightbox Modal
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+
+      document.querySelectorAll('.gallery-postcard').forEach(card => {
+        card.addEventListener('click', () => {
+          const img = card.querySelector('img');
+          if (img && lightboxModal) {
+            lightboxImg.src = img.src;
+            lightboxCaption.textContent = card.getAttribute('data-caption') || img.alt;
+            lightboxModal.classList.remove('hidden');
+          }
+        });
+      });
+      if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', () => lightboxModal.classList.add('hidden'));
+      if (lightboxModal) lightboxModal.addEventListener('click', (e) => { if (e.target === lightboxModal) lightboxModal.classList.add('hidden'); });
+
+      // 6. Scroll Shadow
+      const mainHeader = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        mainHeader.classList.toggle('shadow-xl', window.scrollY > 20);
+      });
+
+      // 7. ระบบ Hero Scenery Slider
+      const heroSlides = document.querySelectorAll('#heroSliderContainer .hero-slide');
+      const heroDots = document.querySelectorAll('#heroSliderContainer .hero-dot');
+      const heroPrevBtn = document.getElementById('heroPrevBtn');
+      const heroNextBtn = document.getElementById('heroNextBtn');
+      const heroSlideRegionBadge = document.getElementById('heroSlideRegionBadge');
+      const heroSlideCounter = document.getElementById('heroSlideCounter');
+      const heroSlideData = [
+        { badge: '🏞️ เขื่อนขุนด่านปราการชล • เมืองนครนายก' },
+        { badge: '💦 น้ำตกสาริกา & วังตะไคร้ • เมืองนครนายก' },
+        { badge: '🚣 ล่องแก่งลำน้ำนครนายก & ทุ่งนาเขียวขจี' },
+        { badge: '🎋 อุโมงค์ไผ่วัดจุฬาภรณ์วนาราม • บ้านนา' }
+      ];
+      let currentHeroSlide = 0;
+      let heroSliderTimer = null;
+
+      function showHeroSlide(index) {
+        if (!heroSlides.length) return;
+        currentHeroSlide = (index + heroSlides.length) % heroSlides.length;
+        heroSlides.forEach((slide, i) => {
+          if (i === currentHeroSlide) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+        heroDots.forEach((dot, i) => {
+          if (i === currentHeroSlide) {
+            dot.classList.remove('w-2.5', 'bg-vanilla-cream/60');
+            dot.classList.add('w-7', 'bg-yellow-green');
+          } else {
+            dot.classList.remove('w-7', 'bg-yellow-green');
+            dot.classList.add('w-2.5', 'bg-vanilla-cream/60');
+          }
+        });
+        if (heroSlideRegionBadge && heroSlideData[currentHeroSlide]) {
+          heroSlideRegionBadge.textContent = heroSlideData[currentHeroSlide].badge;
+        }
+        if (heroSlideCounter) {
+          heroSlideCounter.textContent = `${currentHeroSlide + 1} / ${heroSlides.length}`;
+        }
+      }
+
+      function startHeroTimer() {
+        clearInterval(heroSliderTimer);
+        heroSliderTimer = setInterval(() => {
+          showHeroSlide(currentHeroSlide + 1);
+        }, 5000);
+      }
+
+      if (heroPrevBtn && heroNextBtn) {
+        heroPrevBtn.addEventListener('click', () => {
+          showHeroSlide(currentHeroSlide - 1);
+          startHeroTimer();
+        });
+        heroNextBtn.addEventListener('click', () => {
+          showHeroSlide(currentHeroSlide + 1);
+          startHeroTimer();
+        });
+        heroDots.forEach(dot => {
+          dot.addEventListener('click', () => {
+            const idx = parseInt(dot.getAttribute('data-slide'), 10);
+            showHeroSlide(idx);
+            startHeroTimer();
+          });
+        });
+        const heroSliderContainer = document.getElementById('heroSliderContainer');
+        if (heroSliderContainer) {
+          let touchStartX = 0;
+          heroSliderContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          }, { passive: true });
+          heroSliderContainer.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 40) {
+              showHeroSlide(diff > 0 ? currentHeroSlide + 1 : currentHeroSlide - 1);
+              startHeroTimer();
+            }
+          }, { passive: true });
+        }
+        startHeroTimer();
+      }
+    });
+  </script>
+</body>
+</html>

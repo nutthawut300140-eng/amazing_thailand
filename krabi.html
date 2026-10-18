@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภาคใต้ : จังหวัดกระบี่ — Amazing Thailand ไม่ไปไม่รู้</title>
+  
+  <!-- Google Fonts: Sarabun & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN พร้อม Custom Color Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'hunter-green': '#386641',
+            'sage-green': '#6a994e',
+            'yellow-green': '#a7c957',
+            'vanilla-cream': '#f2e8cf',
+            'blushed-brick': '#bc4749',
+            nature: {
+              50: '#FAF7F0',
+              100: '#F2E8CF',
+              200: '#E2D4B5',
+              300: '#A7C957',
+              500: '#6A994E',
+              700: '#386641',
+              800: '#284B2F',
+              900: '#1B3420',
+            },
+            brick: {
+              DEFAULT: '#BC4749',
+              dark: '#9E3537',
+              light: '#F9EAEB'
+            }
+          },
+          fontFamily: {
+            sans: ['Sarabun', 'sans-serif'],
+            display: ['Prompt', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS สำหรับระบบดีไซน์ "ป้ายประชาสัมพันธ์ & Editorial Magazine" -->
+  <style>
+    :root {
+      --hunter-green: #386641ff;
+      --sage-green: #6a994eff;
+      --yellow-green: #a7c957ff;
+      --vanilla-cream: #f2e8cfff;
+      --blushed-brick: #bc4749ff;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #FAF7F0;
+      color: #284B2F;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Prompt', sans-serif;
+    }
+    .bg-topo {
+      background-color: #FAF7F0;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85 M20 0 Q 5 30, 25 60 T 20 120 M90 0 Q 110 40, 85 80 T 90 120' fill='none' stroke='%23386641' stroke-width='1' stroke-opacity='0.06'/%3E%3C/svg%3E");
+    }
+    .bg-topo-cream {
+      background-color: #F2E8CF;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85' fill='none' stroke='%23386641' stroke-width='1.2' stroke-opacity='0.08'/%3E%3C/svg%3E");
+    }
+    .signboard-card {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 6px 6px 0px #386641;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .signboard-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 9px 9px 0px #BC4749;
+    }
+    .signboard-card-static {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 7px 7px 0px #386641;
+      position: relative;
+    }
+    .sign-bolt {
+      width: 9px;
+      height: 9px;
+      border-radius: 9999px;
+      background-color: #F2E8CF;
+      border: 2px solid #386641;
+      display: inline-block;
+    }
+    .km-milestone {
+      border-radius: 9999px 9999px 14px 14px;
+      border: 2.5px solid #386641;
+      background: #F2E8CF;
+      box-shadow: 4px 4px 0px #386641;
+      overflow: hidden;
+    }
+    .highway-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      background-color: #386641;
+      color: #F2E8CF;
+      border: 2px solid #F2E8CF;
+      outline: 2px solid #386641;
+      border-radius: 6px;
+      font-family: 'Prompt', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+    .ticket-notch {
+      position: relative;
+    }
+    .ticket-notch::before,
+    .ticket-notch::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #F2E8CF;
+      border: 2.5px solid #386641;
+      border-radius: 9999px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .ticket-notch::before { left: -12px; }
+    .ticket-notch::after { right: -12px; }
+    .rubber-stamp {
+      border: 2.5px dashed #BC4749;
+      color: #BC4749;
+      transform: rotate(-5deg);
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-slide {
+      animation: fadeSlideUp 0.32s ease-out forwards;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    @media (max-width: 640px) {
+      .signboard-card-static, .signboard-card {
+        box-shadow: 4px 4px 0px #386641;
+      }
+    }
+  </style>
+</head>
+<body class="bg-topo text-nature-800 antialiased flex flex-col min-h-screen selection:bg-yellow-green selection:text-hunter-green">
+
+  <!-- =========================================================================
+       0. TOP HIGHWAY SIGNBOARD BAR
+       ========================================================================= -->
+  <div class="bg-hunter-green text-vanilla-cream border-b-2 border-yellow-green/40 py-2 px-4 text-xs font-heading">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-blushed-brick text-white font-bold uppercase text-[10px]">REGION 06 : SOUTH</span>
+        <span class="font-medium">ป้ายประชาสัมพันธ์ภาคใต้ • <strong class="text-yellow-green">จังหวัดกระบี่</strong></span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-vanilla-cream/90">
+        <span><i class="fa-solid fa-plane-up text-yellow-green mr-1"></i> สนามบินนานาชาติกระบี่ (KBV) & ทางหลวง ทล. 4 / ทล. 44</span>
+        <span>|</span>
+        <span><i class="fa-solid fa-location-dot text-blushed-brick mr-1"></i> ระยะทางจาก กทม. 814 กม. (บิน 1 ชม. 20 นาที)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1. NAVBAR SECTION
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-nature-50/95 backdrop-blur-md border-b-2 border-hunter-green transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group focus:outline-none">
+          <div class="px-3 sm:px-4 h-11 sm:h-12 rounded-xl bg-hunter-green border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] flex items-center justify-center gap-2 text-vanilla-cream group-hover:bg-blushed-brick transition-all shrink-0">
+            <i class="fa-solid fa-arrow-left text-sm sm:text-base"></i>
+            <span class="font-heading font-bold text-xs sm:text-sm whitespace-nowrap">กลับหน้าหลัก</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-base sm:text-xl font-extrabold font-heading text-hunter-green tracking-tight leading-tight">
+                ภาคใต้ : <span class="text-blushed-brick">กระบี่</span>
+              </span>
+              <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-heading font-bold bg-vanilla-cream border border-hunter-green text-hunter-green rounded">กม. 814</span>
+            </div>
+            <span class="text-[11px] sm:text-xs tracking-wider text-sage-green font-heading font-semibold block">Amazing Thailand</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 font-heading text-sm font-semibold text-hunter-green" aria-label="เมนูหน้ากระบี่">
+          <a href="#hero" class="hover:text-blushed-brick transition-colors py-1">หน้าแรก</a>
+          <a href="#transport" class="hover:text-blushed-brick transition-colors py-1">การเดินทาง</a>
+          <a href="#districts" class="hover:text-blushed-brick transition-colors py-1">ป้าย 8 อำเภอ</a>
+          <a href="#routes" class="hover:text-blushed-brick transition-colors py-1">รูทแนะนำ</a>
+          <a href="#gallery" class="hover:text-blushed-brick transition-colors py-1">โปสการ์ด</a>
+          <a href="#contact" class="hover:text-blushed-brick transition-colors py-1">ศูนย์ข้อมูล</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-2">
+          <a href="prachuap.html" class="px-3.5 py-2 rounded-xl bg-vanilla-cream hover:bg-yellow-green/50 text-hunter-green border-2 border-hunter-green font-heading text-xs font-bold shadow-[2px_2px_0px_#386641] transition"><i class="fa-solid fa-chevron-left mr-1"></i> ภาคตะวันตก (ประจวบฯ)</a>
+          <a href="chiangmai.html" class="px-3.5 py-2 rounded-xl bg-blushed-brick hover:bg-brick-dark text-white font-heading text-xs font-bold border-2 border-hunter-green shadow-[3px_3px_0px_#386641] transition">ภาคเหนือ (เชียงใหม่) <i class="fa-solid fa-chevron-right ml-1"></i></a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobileMenuBtn" type="button" aria-label="เปิดเมนูนำทาง" aria-expanded="false" class="p-2.5 rounded-xl bg-vanilla-cream border-2 border-hunter-green text-hunter-green hover:bg-yellow-green/40 focus:outline-none">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t-2 border-hunter-green bg-vanilla-cream px-5 pt-4 pb-6 space-y-2.5 font-heading shadow-2xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-blushed-brick hover:bg-white"><i class="fa-solid fa-house mr-2"></i>กลับหน้าแรกแคมเปญ</a>
+      <a href="#hero" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">หน้าแรกจังหวัดกระบี่</a>
+      <a href="#transport" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">คู่มือการเดินทางสู่กระบี่</a>
+      <a href="#districts" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">สำรวจเจาะลึก 8 อำเภอ</a>
+      <a href="#routes" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ตารางจัดรูทท่องเที่ยว</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">โปสการ์ดภาพบรรยากาศ</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ศูนย์ข้อมูลท่องเที่ยว</a>
+      <div class="pt-3 border-t-2 border-dashed border-hunter-green/30 grid grid-cols-2 gap-2">
+        <a href="chiangmai.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🌲 เหนือ: เชียงใหม่</a>
+        <a href="loei.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">⛰️ อีสาน: เลย</a>
+        <a href="nakhonnayok.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🍃 กลาง: นครนายก</a>
+        <a href="chonburi.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🌊 ตะวันออก: ชลบุรี</a>
+        <a href="prachuap.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold col-span-2 text-center">🏖️ ตะวันตก: ประจวบคีรีขันธ์</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- =========================================================================
+         2. HERO SECTION (ป้ายประชาสัมพันธ์จังหวัดกระบี่)
+         ========================================================================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-vanilla-cream/85 via-transparent to-transparent pt-8 pb-16 lg:pt-12 lg:pb-24 border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-8 border-b-2 border-hunter-green text-xs font-heading font-bold text-hunter-green">
+          <div class="flex items-center gap-2">
+            <span class="highway-badge"><i class="fa-solid fa-plane-up"></i> สนามบินนานาชาติกระบี่ (KBV) / ทล. 4 เพชรเกษม</span>
+            <span>คู่มือป้ายประชาสัมพันธ์ประจำจังหวัดกระบี่</span>
+          </div>
+          <span class="text-blushed-brick">● SOUTHERN REGION REPRESENTATIVE</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[4px_4px_0px_#BC4749]">
+              <span class="sign-bolt"></span>
+              <span class="font-heading text-xs sm:text-sm font-bold text-yellow-green">🏝️ ตัวแทนภาคใต้ • Amazing Thailand 1 ภาค 1 จังหวัด</span>
+              <span class="sign-bolt"></span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-hunter-green leading-tight">
+              มรกตแห่งอันดามัน สวรรค์เขาหินปูน <br>
+              <span class="inline-block mt-1 px-4 py-1 bg-blushed-brick text-vanilla-cream rounded-2xl border-2 border-hunter-green shadow-[5px_5px_0px_#386641]">
+                จังหวัดกระบี่
+              </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-nature-800 leading-relaxed max-w-2xl">
+              ออกเดินทางสู่สวรรค์แห่งท้องทะเลอันดามัน หมุดหมายในฝันของนักเดินทางทั่วโลก! ตื่นตาตื่นใจกับผาหินปูนสูงตระหง่านและผืนน้ำสีมรกต <strong class="text-hunter-green font-bold">ครอบคลุมทั้ง 8 อำเภอ</strong> ตั้งแต่ล่องเรือหัวโทงชมหาดไร่เลย์และทะเลแหวก แหวกว่ายในปิเละลากูนเกาะพีพี ชมแสงสุดท้ายที่ประภาคารเกาะลันตา แช่น้ำตกร้อนและสระมรกตคลองท่อม พายคายัคคลองน้ำใส ไปจนถึงลิ้มรสอาหารใต้แท้ระดับมิชลินไกด์!
+            </p>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+              <a href="#districts" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-blushed-brick hover:bg-brick-dark text-white font-heading font-bold border-2 border-hunter-green shadow-[5px_5px_0px_#386641] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all">
+                <i class="fa-solid fa-signs-post"></i>
+                <span>เปิดป้ายสำรวจ 8 อำเภอ</span>
+              </a>
+              <a href="#transport" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green font-heading font-bold shadow-[5px_5px_0px_#6A994E] transition-all">
+                <i class="fa-solid fa-plane-departure text-blushed-brick"></i>
+                <span>ดูวิธีเดินทางไปกระบี่</span>
+              </a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg">
+              <div class="bg-white p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#386641] text-center">
+                <p class="text-xl sm:text-2xl font-extrabold font-heading text-hunter-green">8 อำเภอ</p>
+                <p class="text-[11px] font-heading font-semibold text-sage-green">ครบทั้งเกาะ & ขุนเขา</p>
+              </div>
+              <div class="bg-white p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] text-center">
+                <p class="text-xl sm:text-2xl font-extrabold font-heading text-blushed-brick">154 เกาะ</p>
+                <p class="text-[11px] font-heading font-semibold text-sage-green">ทะเลมรกตอันดามัน</p>
+              </div>
+              <div class="bg-white p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#6A994E] text-center">
+                <p class="text-xl sm:text-2xl font-extrabold font-heading text-hunter-green">Michelin</p>
+                <p class="text-[11px] font-heading font-semibold text-sage-green">อาหารใต้แท้รสจัดจ้าน</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative w-full">
+            <div class="signboard-card-static rounded-3xl p-3 sm:p-3.5 bg-vanilla-cream w-full">
+              <div class="flex items-center justify-between px-3 py-2 mb-2.5 sm:mb-3 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold">
+                <span class="sign-bolt"></span>
+                <span class="truncate px-1"><i class="fa-solid fa-water text-yellow-green mr-1.5"></i> ป้ายทัศนียภาพกระบี่ • KRABI ANDAMAN</span>
+                <span class="sign-bolt"></span>
+              </div>
+
+              <!-- Interactive Hero Slider -->
+              <div id="heroSliderContainer" class="relative rounded-2xl overflow-hidden w-full aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3.8] xl:aspect-[4/3.6] border-2 border-hunter-green group bg-hunter-green">
+                <!-- Slide 0 -->
+                <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100" data-index="0">
+                  <img 
+                    src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80" 
+                    alt="เรือหัวโทงและหน้าผาหินปูนริมหาดไร่เลย์ จังหวัดกระบี่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Krabi+1';"
+                  >
+                </div>
+                <!-- Slide 1 -->
+                <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-index="1">
+                  <img 
+                    src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=900&q=80" 
+                    alt="ปิเละลากูนและอ่าวมาหยา หมู่เกาะพีพี จังหวัดกระบี่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/6A994E/F2E8CF?text=Krabi+2';"
+                  >
+                </div>
+                <!-- Slide 2 -->
+                <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-index="2">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" 
+                    alt="ประภาคารแหลมโตนด เกาะลันตา และเกาะรอก จังหวัดกระบี่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/BC4749/F2E8CF?text=Krabi+3';"
+                  >
+                </div>
+                <!-- Slide 3 -->
+                <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-index="3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=900&q=80" 
+                    alt="สระมรกต น้ำตกร้อนคลองท่อม และคลองหรูด จังหวัดกระบี่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Krabi+4';"
+                  >
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-transparent to-black/20 pointer-events-none"></div>
+
+                <!-- Dynamic Badge Top-Left -->
+                <div class="absolute top-3 left-3 z-20">
+                  <span id="heroSlideRegionBadge" class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-hunter-green/90 backdrop-blur-md text-yellow-green border border-yellow-green/50 font-heading text-[10px] sm:text-xs font-bold shadow-md">
+                    🛶 เรือหัวโทง & ผาหินปูนหาดไร่เลย์
+                  </span>
+                </div>
+
+                <!-- Rubber Stamp Top-Right -->
+                <div class="absolute top-3 right-3 bg-vanilla-cream/95 px-2.5 py-1 rounded-xl rubber-stamp font-heading text-center shadow z-20 hidden sm:block">
+                  <p class="text-[9px] font-extrabold uppercase leading-none">AMAZING PICK</p>
+                  <p class="text-[11px] font-extrabold leading-tight">มรกตอันดามัน</p>
+                </div>
+
+                <!-- Prev / Next Buttons -->
+                <button id="heroPrevBtn" type="button" aria-label="ภาพก่อนหน้า" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-yellow-green text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-105 focus:outline-none">
+                  <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
+                </button>
+                <button id="heroNextBtn" type="button" aria-label="ภาพถัดไป" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-yellow-green text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-105 focus:outline-none">
+                  <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
+                </button>
+
+                <!-- Slide Indicators & Caption Bottom -->
+                <div class="absolute bottom-2.5 sm:bottom-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 z-20 space-y-1.5 sm:space-y-2">
+                  <div class="flex items-center justify-between px-1">
+                    <div class="flex items-center gap-1.5" id="heroSlideDots">
+                      <button type="button" aria-label="สไลด์ 1" data-slide="0" class="hero-dot w-7 h-2 rounded-full bg-yellow-green border border-hunter-green transition-all"></button>
+                      <button type="button" aria-label="สไลด์ 2" data-slide="1" class="hero-dot w-2.5 h-2 rounded-full bg-vanilla-cream/60 hover:bg-vanilla-cream border border-hunter-green transition-all"></button>
+                      <button type="button" aria-label="สไลด์ 3" data-slide="2" class="hero-dot w-2.5 h-2 rounded-full bg-vanilla-cream/60 hover:bg-vanilla-cream border border-hunter-green transition-all"></button>
+                      <button type="button" aria-label="สไลด์ 4" data-slide="3" class="hero-dot w-2.5 h-2 rounded-full bg-vanilla-cream/60 hover:bg-vanilla-cream border border-hunter-green transition-all"></button>
+                    </div>
+                    <span id="heroSlideCounter" class="text-[10px] font-heading font-bold text-vanilla-cream bg-hunter-green/80 px-2 py-0.5 rounded-md border border-vanilla-cream/30">1 / 4</span>
+                  </div>
+
+                  <div class="text-white p-2.5 sm:p-3.5 rounded-2xl bg-hunter-green/95 backdrop-blur-md border-2 border-vanilla-cream shadow-lg">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-sparkles mr-1"></i> เสน่ห์เมืองต้องห้ามพลาด</p>
+                    <p class="text-[11px] sm:text-xs font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2 sm:line-clamp-none">“กระบี่ไม่ได้มีดีแค่เกาะพีพีหรือไร่เลย์ แต่บนฝั่งยังมีสระมรกต น้ำตกร้อน คลองหรูด และขนมจีนไก่ทอดระดับตำนานที่ต้องมาลองให้ได้!”</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden sm:flex km-milestone w-24 sm:w-28 flex-col items-center text-center absolute -bottom-5 -left-3 lg:-left-6 z-30 shadow-lg">
+              <div class="w-full bg-blushed-brick text-white py-1 border-b-2 border-hunter-green font-heading">
+                <p class="text-[10px] font-bold">ทางหลวง 4</p>
+              </div>
+              <div class="py-1.5 sm:py-2 px-2 font-heading">
+                <p class="text-[10px] font-bold text-sage-green">กระบี่</p>
+                <p class="text-xl sm:text-2xl font-extrabold text-hunter-green leading-tight">814</p>
+                <p class="text-[9px] sm:text-[10px] font-bold text-hunter-green">กม. จาก กทม.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. TRANSPORTATION GUIDE SECTION
+         ========================================================================= -->
+    <section id="transport" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-route"></i> TRANSPORTATION GUIDE</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">การเดินทางสู่กระบี่ สะดวกยังไง ไปยังไง?</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">สนามบิน KBV</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">1. เครื่องบิน (บินตรง KBV)</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              บินตรงลง <strong>ท่าอากาศยานนานาชาติกระบี่ (อ.เหนือคลอง)</strong> ทุกวันจากสุวรรณภูมิ ดอนเมือง เชียงใหม่ และสมุย ใช้เวลาเพียง 1 ชม. 20 นาที ห่างตัวเมืองกระบี่เพียง 12 กม.
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-sage-green text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ทล. 4 & ทล. 44</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">2. รถยนต์ส่วนตัว & รถทัวร์ VIP</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ขับรถตามทางหลวงหมายเลข 4 (เพชรเกษม) ต่อด้วย ทล.41 และ ทล.44 (เซาเทิร์นซีบอร์ด) ระยะทาง 814 กม. หรือนั่งรถทัวร์ VIP จากสายใต้ใหม่ถึง บขส.กระบี่โดยตรง
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">เรือหัวโทง</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">3. เรือหัวโทง & สปีดโบ๊ท</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ขึ้นเรือหางยาวหัวโทงที่ <strong>ท่าเรืออ่าวนาง / อ่าวน้ำเมา / ท่าเรือเจ้าฟ้า</strong> ไปหาดไร่เลย์ (15 นาที) ทะเลแหวก และเกาะห้อง หรือขึ้นเรือเฟอร์รี่ที่ท่าเรือคลองจิหลาดไปเกาะพีพี-ลันตา
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-shuttle-van"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">Shuttle & เช่ารถ</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">4. การเดินทางในจังหวัด</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              มีรถ Airport Shuttle Bus เชื่อมสนามบิน-ตัวเมือง-อ่าวนาง, รถสองแถวสีขาววิ่งรอบเมือง และบริการเช่ารถขับเที่ยวสระมรกต คลองหรูด และข้ามสะพานสิริลันตาสู่เกาะลันตา
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. INTERACTIVE 8 DISTRICTS EXPLORER (ป้ายเจาะลึกครบ 8 อำเภอกระบี่)
+         ========================================================================= -->
+    <section id="districts" class="py-20 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold uppercase shadow-[3px_3px_0px_#BC4749]">
+            <span class="sign-bolt"></span>
+            <span>Complete 8 Districts Signboard Directory</span>
+            <span class="sign-bolt"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-hunter-green">
+            ป้ายข้อมูลเจาะลึกจังหวัดกระบี่
+          </h2>
+        </div>
+
+        <div class="signboard-card-static p-5 sm:p-6 rounded-3xl bg-white mb-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 pb-4 border-b-2 border-dashed border-hunter-green/25">
+            <div>
+              <span class="font-heading font-extrabold text-hunter-green text-base flex items-center gap-2">
+                <i class="fa-solid fa-signs-post text-blushed-brick"></i> ป้ายบอกทางทั้ง 8 อำเภอของจังหวัดกระบี่:
+              </span>
+            </div>
+
+            <div class="relative w-full md:w-80">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-green text-sm"></i>
+              <input 
+                id="districtSearchInput" 
+                type="text" 
+                placeholder="ค้นหาอำเภอ, ไร่เลย์, พีพี, เกาะลันตา, สระมรกต, โกจ้อย..." 
+                class="w-full pl-9 pr-4 py-2 rounded-xl bg-vanilla-cream/60 border-2 border-hunter-green text-xs sm:text-sm font-heading text-hunter-green placeholder:text-hunter-green/50 focus:outline-none focus:bg-white"
+              >
+            </div>
+          </div>
+
+          <div id="districtButtonsContainer" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- ปุ่มกรองหมวดหมู่ + ปุ่มเลื่อนอำเภอ -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <div class="flex flex-wrap gap-2">
+            <button type="button" data-cat="all" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition">แสดงครบทั้ง 4 หมวด</button>
+            <button type="button" data-cat="attraction" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏞️ ที่เที่ยว & หมู่เกาะ</button>
+            <button type="button" data-cat="food" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🍜 ร้านอาหาร & มิชลิน</button>
+            <button type="button" data-cat="cafe" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">☕ คาเฟ่แนะนำ</button>
+            <button type="button" data-cat="hotel" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏨 ที่พักแนะนำ</button>
+          </div>
+
+          <div class="flex items-center gap-2 font-heading">
+            <button id="prevDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              <i class="fa-solid fa-chevron-left mr-1"></i> อำเภอก่อนหน้า
+            </button>
+            <span id="distCounterBadge" class="px-3 py-1.5 rounded-xl bg-hunter-green text-yellow-green text-xs font-extrabold border-2 border-hunter-green">
+              1 / 8
+            </span>
+            <button id="nextDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              อำเภอถัดไป <i class="fa-solid fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- กล่องป้ายแสดงรายละเอียดของอำเภอที่เลือก -->
+        <div id="districtDetailBoard" class="signboard-card-static ticket-notch rounded-3xl overflow-hidden bg-white">
+          <div class="bg-hunter-green text-vanilla-cream p-6 sm:p-8 border-b-2 border-hunter-green flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div>
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span id="distZoneBadge" class="px-3 py-0.5 rounded-md bg-yellow-green text-hunter-green font-heading text-xs font-extrabold uppercase"></span>
+                <span class="px-2.5 py-0.5 rounded-md bg-white/15 text-vanilla-cream font-heading text-xs font-semibold">KRABI DISTRICT GUIDE</span>
+              </div>
+              <h3 id="distNameTitle" class="text-2xl sm:text-3xl font-extrabold font-heading text-white"></h3>
+              <p id="distSlogan" class="text-sm sm:text-base text-yellow-green font-heading font-medium mt-1"></p>
+            </div>
+            <div class="bg-vanilla-cream text-hunter-green px-5 py-3.5 rounded-2xl border-2 border-yellow-green lg:max-w-sm shrink-0 shadow-md">
+              <p class="text-xs font-heading font-extrabold text-blushed-brick uppercase"><i class="fa-solid fa-compass mr-1"></i> ทิปส์การเดินทาง</p>
+              <p id="distTip" class="text-xs sm:text-sm font-medium text-hunter-green mt-1 leading-snug"></p>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-nature-50">
+            <article data-card-cat="attraction" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#386641] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-water"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Islands, Caves & Emerald Pools</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏞️ สถานที่ท่องเที่ยว & หมู่เกาะ</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distAttraction" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="food" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#BC4749] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-utensils"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-blushed-brick uppercase block">Southern Cuisine & Michelin</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🍜 ร้านอาหารเด็ด & มิชลินไกด์</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distFood" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="cafe" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#6A994E] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-sage-green text-white flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-mug-saucer"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Panorama & Beach Cafes</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">☕ คาเฟ่วิวผาหินปูน & ริมเล</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distCafe" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <article data-card-cat="hotel" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#A7C957] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-bed"></i></div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-hunter-green uppercase block">Where to Stay</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏨 ที่พัก รีสอร์ทหรู & โฮมสเตย์</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distHotel" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. RECOMMENDED TRAVEL ROUTES SECTION
+         ========================================================================= -->
+    <section id="routes" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-map-signs"></i> SMART ITINERARY PASS</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">ป้ายจัดรูทเที่ยวกระบี่เชื่อมโยง 8 อำเภอ</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-hunter-green text-yellow-green font-heading text-xs font-bold">รูทที่ 1 : เกาะสวรรค์อันดามัน</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">อ.เมืองกระบี่ (ไร่เลย์-พีพี)</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              นั่งเรือหัวโทงชมทะเลแหวก เกาะปอดะ หาดถ้ำพระนาง อ่าวมาหยา และปิเละลากูนเกาะพีพี ตกเย็นชิมร้านโกตุ๊ก & น้องโจ๊ก มิชลินไกด์
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-blushed-brick text-white font-heading text-xs font-bold">รูทที่ 2 : สโลว์ไลฟ์ & เกาะรอก</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">อ.เกาะลันตา</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ถ่ายรูปประภาคารแหลมโตนด เดินเล่นเมืองเก่าลันตา (Lanta Old Town) และออกเรือดำน้ำดูปะการังน้ำใสระดับ HD ที่เกาะรอก-เกาะห้า
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-sage-green text-white font-heading text-xs font-bold">รูทที่ 3 : สปาธรรมชาติ & น้ำใส</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">คลองท่อม ➔ ลำทับ ➔ ปลายพระยา</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              เดินป่าชมสระมรกตและบ่อน้ำผุด แช่น้ำตกร้อนคลองท่อมและบ่อน้ำพุร้อนเค็มลำทับ แล้วไปพายเรือคายัคล่องคลองหรูด (คลองน้ำใส) ปลายพระยา
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-yellow-green text-hunter-green font-heading text-xs font-bold">รูทที่ 4 : ถ้ำโบราณ & วิถีชุมชน</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">อ่าวลึก ➔ เหนือคลอง ➔ เขาพนม</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              พายคายัคชมภาพเขียนสี 3,000 ปี ถ้ำผีหัวโต แวะแหลมสักทะเล 3 ด้าน เล่นน้ำตกห้วยโตเขาพนม และกินขนมจีนไก่ทอดโกจ้อย เหนือคลอง
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. GALLERY SECTION
+         ========================================================================= -->
+    <section id="gallery" class="py-16 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="highway-badge mb-2"><i class="fa-solid fa-camera"></i> POSTCARD GALLERY</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">โปสการ์ดภาพบรรยากาศจังหวัดกระบี่</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🛶 เรือหัวโทงและหน้าผาหินปูนริมชายหาดไร่เลย์ จังหวัดกระบี่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="เรือหัวโทงริมชายหาดไร่เลย์และอ่าวนาง จังหวัดกระบี่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Railay+Beach';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🛶 หาดไร่เลย์ กระบี่</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🏝️ ปิเละลากูนและอ่าวมาหยา หมู่เกาะพีพี จังหวัดกระบี่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="ปิเละลากูนและอ่าวมาหยา หมู่เกาะพีพี จังหวัดกระบี่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/6A994E/F2E8CF?text=Phi+Phi+Islands';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🏝️ หมู่เกาะพีพี & ปิเละลากูน</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🌅 ประภาคารแหลมโตนดและชายหาดเกาะลันตา จังหวัดกระบี่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="ชายหาดและประภาคารแหลมโตนด เกาะลันตา จังหวัดกระบี่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/BC4749/F2E8CF?text=Koh+Lanta';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🌅 เกาะลันตา & เกาะรอก</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="💎 สระมรกต น้ำตกร้อนคลองท่อม และคลองน้ำใส จังหวัดกระบี่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80" alt="สระมรกตและน้ำตกร้อนคลองท่อม จังหวัดกระบี่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Emerald+Pool';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>💎 สระมรกต คลองท่อม</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CONTACT & LOCATION SECTION (Placeholder)
+         ========================================================================= -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="highway-badge !bg-blushed-brick">TOURIST INFORMATION</span>
+            <h2 class="text-2xl font-extrabold font-heading text-hunter-green">ศูนย์บริการข้อมูลท่องเที่ยวจังหวัดกระบี่</h2>
+            <!-- PLACEHOLDER: แก้ไขที่อยู่และเบอร์โทรศัพท์จริงได้ที่นี่ -->
+            <div class="signboard-card p-5 rounded-2xl bg-vanilla-cream/50 space-y-2">
+              <p class="text-sm text-nature-800 leading-relaxed">
+                <strong>การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานกระบี่ :</strong><br>
+                292 ถนนมหาราช ตำบลปากน้ำ อำเภอเมืองกระบี่ จังหวัดกระบี่ 81000
+              </p>
+              <p class="text-sm text-hunter-green font-bold">
+                <i class="fa-solid fa-phone text-blushed-brick mr-2"></i> โทร: 075-622-163 หรือ สายด่วน ททท. 1672
+              </p>
+            </div>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-hunter-green hover:bg-blushed-brick text-vanilla-cream font-heading text-xs font-bold border-2 border-hunter-green transition">
+                <i class="fa-solid fa-house"></i> กลับหน้าหลักแคมเปญ 6 ภาค
+              </a>
+              <a href="chiangmai.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vanilla-cream hover:bg-yellow-green text-hunter-green font-heading text-xs font-bold border-2 border-hunter-green transition">
+                วนกลับไปภาคเหนือ (เชียงใหม่) <i class="fa-solid fa-rotate-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7 signboard-card-static p-4 rounded-3xl bg-vanilla-cream">
+            <div class="w-full h-72 rounded-2xl overflow-hidden border-2 border-hunter-green">
+              <!-- PLACEHOLDER: แผนที่จังหวัดกระบี่ -->
+              <iframe 
+                title="แผนที่จังหวัดกระบี่" 
+                src="https://maps.google.com/maps?q=Krabi+Thailand&t=&z=9&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-nature-900/90 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="max-w-3xl w-full bg-vanilla-cream rounded-3xl p-4 border-4 border-hunter-green shadow-2xl">
+      <div class="flex items-center justify-between pb-3 mb-3 border-b-2 border-hunter-green">
+        <span id="lightboxCaption" class="font-heading font-bold text-sm sm:text-base text-hunter-green"></span>
+        <button id="closeLightboxBtn" type="button" class="w-9 h-9 rounded-xl bg-blushed-brick text-white font-bold flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="rounded-2xl overflow-hidden border-2 border-hunter-green max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="ภาพขยาย" class="w-full h-full object-contain bg-nature-900">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       ========================================================================= -->
+  <footer class="bg-hunter-green text-vanilla-cream py-10 border-t-4 border-blushed-brick">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <!-- PLACEHOLDER: แก้ไขเครดิตผู้จัดทำได้ที่นี่ -->
+      <p>© 2026 Amazing Thailand 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ — ภาคใต้ จังหวัดกระบี่</p>
+      <div class="flex flex-wrap gap-3 font-heading font-semibold">
+        <a href="index.html" class="hover:text-yellow-green">หน้าหลัก</a>
+        <span>•</span>
+        <a href="chiangmai.html" class="hover:text-yellow-green">เชียงใหม่</a>
+        <span>•</span>
+        <a href="loei.html" class="hover:text-yellow-green">เลย</a>
+        <span>•</span>
+        <a href="nakhonnayok.html" class="hover:text-yellow-green">นครนายก</a>
+        <span>•</span>
+        <a href="chonburi.html" class="hover:text-yellow-green">ชลบุรี</a>
+        <span>•</span>
+        <a href="prachuap.html" class="hover:text-yellow-green">ประจวบคีรีขันธ์</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. VANILLA JAVASCRIPT (ฐานข้อมูลครบ 8 อำเภอจังหวัดกระบี่ + การ์ดย่อย Badge + ค้นหาด่วน)
+       ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      let isMenuOpen = false;
+
+      const toggleMenu = () => {
+        isMenuOpen = !isMenuOpen;
+        mobileMenu.classList.toggle('hidden', !isMenuOpen);
+        menuIcon.classList.toggle('fa-bars', !isMenuOpen);
+        menuIcon.classList.toggle('fa-xmark', isMenuOpen);
+      };
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+      document.querySelectorAll('.mobile-nav-link').forEach(l => l.addEventListener('click', () => { if (isMenuOpen) toggleMenu(); }));
+
+      // 2. ข้อมูลเจาะลึกครบทั้ง 8 อำเภอของจังหวัดกระบี่
+      const districtsData = [
+        {
+          id: 1, name: '1. อ.เมืองกระบี่', zone: 'โซนเกาะสวรรค์ระดับโลก & มิชลินไกด์',
+          slogan: 'หาดไร่เลย์ ทะเลแหวก ปิเละลากูนเกาะพีพี วัดถ้ำเสือ และอาหารใต้มิชลิน',
+          tip: 'ก่อนไปชมปรากฏการณ์ "ทะเลแหวก" แนะนำเช็กตารางน้ำขึ้น-น้ำลงล่วงหน้า ช่วงน้ำลดต่ำสุดจะเดินข้ามสันทรายเชื่อม 3 เกาะได้สวยที่สุด!',
+          attraction: 'หาดไร่เลย์ & หาดถ้ำพระนาง (ผาหินปูนระดับโลก), ทะเลแหวก Unseen Thailand (เกาะทับ-เกาะหม้อ-เกาะไก่), หมู่เกาะพีพี (อ่าวมาหยา & ปิเละลากูน น้ำสีมรกต), เกาะห้อง, วัดถ้ำเสือ (บันได 1,237 ขั้น) และเขาขนาบน้ำ-ลานปูดำ',
+          food: 'ร้านโกตุ๊ก (Michelin Bib Gourmand แกงส้มปลากะพงยอดมะพร้าวอ่อน คั่วกลิ้ง), ร้านน้องโจ๊ก (Michelin Bib Gourmand หอยชักตีน แกงกะทิปูใบชะพลู), โรตีหน้าโวค และห้องอาหารถ้ำหินปูน The Grotto (Rayavadee)',
+          cafe: 'Dragon View Bar & Restaurant (คาเฟ่ชมวิวผาหินปูนและทะเลพาโนรามา), Cafe 8.98 อ่าวนาง และ Tan Cafe x Krabi',
+          hotel: 'Rayavadee (รายาวดี หาดไร่เลย์), Phulay Bay, a Ritz-Carlton Reserve (หนองทะเล) และ Centara Grand Beach Resort & Villas Krabi'
+        },
+        {
+          id: 2, name: '2. อ.เกาะลันตา', zone: 'โซนสโลว์ไลฟ์ & ราชินีแห่งอันดามัน',
+          slogan: 'ประภาคารแหลมโตนด ดำน้ำเกาะรอก-เกาะห้า และชุมชนเมืองเก่าลันตา',
+          tip: 'เกาะรอกเปิดให้เข้าท่องเที่ยวเฉพาะช่วงเดือน พ.ย. – พ.ค. ของทุกปี น้ำใสระดับ HD มองเห็นปะการังตั้งแต่บนเรือ!',
+          attraction: 'อุทยานแห่งชาติหมู่เกาะลันตา & ประภาคารแหลมโตนด, เกาะรอก & เกาะห้า (ราชินีแห่งอันดามัน ปะการังสมบูรณ์ที่สุด Unseen), ชุมชนเมืองเก่าลันตา (Lanta Old Town เรือนไม้โบราณยื่นลงทะเล), หาดพระแอะ (Long Beach) และหมู่บ้านชาวเลสังกาอู้',
+          food: 'ร้านอาหาร Shine Talay (เรือนไม้เหนือน้ำ เมืองเก่าลันตา ปลาอินทรีย์ทอดน้ำปลา กุ้งมังกรลันตา) และร้านอาหารลันตาริมเล (แกงไตปลา หมึกไข่ต้มหวาน)',
+          cafe: 'Viewpoint Cafe Lanta (ชมวิวโค้งอ่าวและหมู่เกาะ) และ Malee Malee Cafe เมืองเก่าลันตา',
+          hotel: 'Pimalai Resort & Spa (พิมาลัย รีสอร์ทหรูระดับโลกบนเนินเขาอ่าวบากันเตียง), Layana Resort & Spa และ Rawi Warin Resort & Spa'
+        },
+        {
+          id: 3, name: '3. อ.คลองท่อม', zone: 'โซนสระมรกต & น้ำตกร้อนธรรมชาติ',
+          slogan: 'สระมรกต บ่อน้ำผุดสีคราม น้ำตกร้อนคลองท่อม และลูกปัดโบราณสองพันปี',
+          tip: 'แนะนำไปถึงสระมรกตและน้ำตกร้อนคลองท่อมช่วงเช้า 08.30 – 10.00 น. อากาศกำลังดี คนไม่แน่น และแสงแดดส่องผิวน้ำเป็นสีเขียวมรกตใสแจ๋ว',
+          attraction: 'สระมรกต (Emerald Pool สระน้ำอุ่นธรรมชาติสีเขียวมรกตกลางป่า Unseen), บ่อน้ำผุด (Blue Pool ตาน้ำสีน้ำเงินคราม), น้ำตกร้อนคลองท่อม (อ่างจากุซซี่น้ำแร่ธรรมชาติ 42 องศา) และพิพิธภัณฑ์ลูกปัดโบราณวัดคลองท่อม',
+          food: 'ครัวสระมรกต (ปลาทับทิมทอดสมุนไพร แกงส้มยอดมะพร้าวปลาคัง) และข้าวหมกไก่คลองท่อมเครื่องเทศหอมฟุ้ง',
+          cafe: 'Wareerak Cafe (คาเฟ่สมุนไพรออร์แกนิกในสวนป่า) และ Emerald Green Cafe หน้าทางเข้าสระมรกต',
+          hotel: 'Wareerak Hot Springs & Wellness (วารีรักษ์ ฮ็อตสปริง รีทรีต สปาน้ำแร่ร้อนธรรมชาติ) และ Morakot Resort'
+        },
+        {
+          id: 4, name: '4. อ.อ่าวลึก', zone: 'โซนถ้ำโบราณ 3,000 ปี & ทะเลสามด้าน',
+          slogan: 'ภาพเขียนสีถ้ำผีหัวโต พายคายัคลอดถ้ำ อุทยานฯ ธารโบกขรณี และแหลมสัก',
+          tip: 'ที่ชุมชนแหลมสัก อย่าลืมล่องเรือชมเขาหินปูน "กู่หลินเมืองไทย" และแวะชิมสาหร่ายข้อมณีทะเลสดๆ จากฟาร์มชาวบ้าน',
+          attraction: 'ถ้ำผีหัวโต (ภาพเขียนสีก่อนประวัติศาสตร์อายุ 3,000 ปี "คนใส่หมวกมีเขา" Unseen), พายคายัคถ้ำลอด & ถ้ำสระยวนทอง, อุทยานแห่งชาติธารโบกขรณี, ชุมชนท่องเที่ยวแหลมสัก (ทะเล 3 ด้าน วัฒนธรรม 3 สายพันธุ์) และล่องแพไม้ไผ่บ้านถ้ำเสือ',
+          food: 'ข้าวคลุกกะปิแหลมสัก (ใช้กะปิกุ้งเคยแท้หอมหวาน สินค้า GI) และร้านอาหารครัวธารโบก (ผัดผักเหมียงกุ้งเสียบ แกงส้มปลากะพง)',
+          cafe: 'Lan Le Cafe แหลมสัก (ลานเล คาเฟ่ริมทะเลชมวิวผาหินปูน) และ Blue Mountain Cafe Ao Luek',
+          hotel: 'แหลมสักอันดามัน โฮมสเตย์ (สัมผัสวิถีชาวเล) และ ปาล์มเพลส รีสอร์ท อ่าวลึก'
+        },
+        {
+          id: 5, name: '5. อ.เหนือคลอง', zone: 'โซนวิถีเกาะกลาง & ขนมจีนไก่ทอดระดับตำนาน',
+          slogan: 'ชุมชนเกาะกลาง ข้าวสังข์หยดน้ำเค็ม หาดยาว และขนมจีนโกจ้อยต้นตำรับ',
+          tip: 'ลงเครื่องบินที่สนามบินกระบี่ปุ๊บ ต้องแวะร้าน "ขนมจีนโกจ้อย เหนือคลอง" ทันที ขนมจีนเส้นสดคู่ไก่ทอดร้อนๆ อร่อยแสงออกปาก!',
+          attraction: 'ชุมชนเกาะกลาง (นั่งเรือหัวโทงจากท่าเรือเจ้าฟ้า 5 นาที ชมการทำเรือหัวโทงจำลอง เพ้นท์ผ้าปาเต๊ะ และนาข้าวสังข์หยด), หาดยาว เหนือคลอง (จุดชมวิวเกาะพีพีและพระอาทิตย์ตกที่เงียบสงบ) และบ่อน้ำพุร้อนเค็มบ้านบางผึ้ง',
+          food: 'ขนมจีนโกจ้อย เหนือคลอง (ตำนานขนมจีนเส้นสด น้ำยากะทิ-แกงไตปลา ทานคู่ไก่ทอดโกจ้อยหนังกรอบ) และร้านอาหารบ้านมะหญิง กระชังปลาเกาะกลาง (ปูดำนึ่งสด)',
+          cafe: 'Koh Klang Art Cafe (จิบกาแฟวาดผ้าบาติกบนเกาะกลาง) และ The Tree Cafe เหนือคลอง',
+          hotel: 'เกาะกลาง โฮมสเตย์ และ The Pelican Residence & Suite Krabi ริมหาดยาว'
+        },
+        {
+          id: 6, name: '6. อ.เขาพนม', zone: 'โซนยอดเขาสูงสุดกระบี่ & น้ำตก 11 ชั้น',
+          slogan: 'อุทยานแห่งชาติเขาพนมเบญจา น้ำตกห้วยโต 11 ชั้น และจุดชมวิวทะเลหมอก',
+          tip: 'น้ำตกห้วยโตมีแอ่งน้ำใสเย็นฉ่ำตั้งแต่ชั้นที่ 1 เดินเข้าถึงง่ายมาก เหมาะกับการมาปิกนิกคลายร้อนหลังเที่ยวทะเล',
+          attraction: 'อุทยานแห่งชาติเขาพนมเบญจา (ยอดเขาสูงที่สุดในกระบี่ 1,397 เมตร ป่าดิบชื้นอุดมสมบูรณ์), น้ำตกห้วยโต (น้ำตก 11 ชั้นไหลลงแอ่งมรกต), ถ้ำเขาผึ้ง และจุดชมวิวทะเลหมอกเขาพนม',
+          food: 'ครัวพนมเบญจา (แกงส้มปลาคังยอดหวาย ลาบเห็ดแครง ผัดเผ็ดหมูป่า) และร้านส้มตำไก่ย่างริมน้ำตกห้วยโต',
+          cafe: 'Phanom Benja Mountain Coffee (กาแฟโรบัสต้ากระบี่ สินค้า GI) และ Hilltop Cafe Khao Phanom',
+          hotel: 'บ้านพักอุทยานแห่งชาติเขาพนมเบญจา และ พนมเบญจา เมาน์เทน รีสอร์ท'
+        },
+        {
+          id: 7, name: '7. อ.ปลายพระยา', zone: 'โซนอันซีนคลองน้ำใส & พายคายัคป่าพรุ',
+          slogan: 'พายเรือคายัคคลองหรูด (คลองน้ำใส) น้ำใสราวกระจก และถ้ำวารีริน',
+          tip: 'พายคายัคที่คลองหรูดระยะทางไป-กลับประมาณ 2 กม. น้ำตื้นและใสมากจนเห็นฝูงปลาและพืชใต้น้ำชัดเจนตลอดสาย',
+          attraction: 'คลองหรูด หรือ คลองน้ำใส ป่าต้นน้ำปลายพระยา (พายเรือคายัคลอดซุ้มป่าพรุและตอไม้โบราณ ลงเล่นน้ำตาน้ำผุดใสแจ๋ว Unseen), ถ้ำวารีริน และศูนย์อนุรักษ์ช้างปลายพระยา',
+          food: 'ครัวคลองหรูด (ส้มตำปูม้า ไก่ทอดเกลือ ปลาเผา) และครัวปลายพระยา (แกงพุงปลา คั่วกลิ้งเนื้อ ปลาช่อนทอดขมิ้น)',
+          cafe: 'Klong Root Kayak & Cafe (จิบกาแฟชมวิวคนพายคายัคริมน้ำใส) และ ปลายพระยา ริเวอร์ไซด์ คาเฟ่',
+          hotel: 'คลองหรูด โฮมสเตย์ & รีสอร์ท และ ปลายพระยา กรีน วิลล่า'
+        },
+        {
+          id: 8, name: '8. อ.ลำทับ', zone: 'โซนน้ำพุร้อนเค็ม & อ่างเก็บน้ำห้วยน้ำเขียว',
+          slogan: 'มหัศจรรย์บ่อน้ำพุร้อนเค็ม 1 ในไม่กี่แห่งของโลก และอ่างเก็บน้ำห้วยน้ำเขียว',
+          tip: 'การแช่เท้าและอาบน้ำแร่ที่บ่อน้ำพุร้อนเค็มช่วยกระตุ้นการไหลเวียนโลหิตและบรรเทาอาการปวดเมื่อยจากการเดินเที่ยวได้ดีเยี่ยม',
+          attraction: 'บ่อน้ำพุร้อนเค็ม รอยต่อคลองท่อม-ลำทับ (ปรากฏการณ์น้ำพุร้อนธรรมชาติที่มีรสเค็ม อุณหภูมิ 40-47 องศาเซลเซียส Unseen), อ่างเก็บน้ำห้วยน้ำเขียว (จุดชมพระอาทิตย์ตกและปั่นจักรยาน) และสวนเกษตรผสมผสานลำทับ',
+          food: 'ข้าวยำน้ำบูดูสมุนไพรปักษ์ใต้ลำทับ และครัวลำทับ (แกงส้มหน่อไม้ดองปลาคัง ต้มยำไก่บ้านขมิ้น ผัดสะตอกะปิกุ้งสด)',
+          cafe: 'Lam Thap Garden Cafe (คาเฟ่ในสวนผลไม้ร่มรื่น) และ ร้านกาแฟโบราณตลาดลำทับ',
+          hotel: 'ลำทับ โฮมสเตย์ และ รีสอร์ทสวนปาล์มลำทับ'
+        }
+      ];
+
+      const formatRichList = (text) => {
+        const parts = text.split(/,\s*|\s+และ(?=[^\s])/g).map(s => s.trim()).filter(Boolean);
+        return parts.map((item, i) => {
+          let badgeHtml = '';
+          if (/Michelin|มิชลิน/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-blushed-brick text-white font-heading text-[10px] font-bold uppercase">🏆 Michelin</span>`;
+          } else if (/GI/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-hunter-green text-yellow-green font-heading text-[10px] font-bold uppercase">🌿 สินค้า GI</span>`;
+          } else if (/Unseen|ระดับโลก|ตำนาน/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-sage-green text-white font-heading text-[10px] font-bold uppercase">✨ ไฮไลต์</span>`;
+          }
+          return `
+            <li class="flex items-start gap-2.5 p-2.5 rounded-xl bg-nature-50 border border-hunter-green/20 hover:bg-vanilla-cream/60 transition">
+              <span class="w-5 h-5 rounded-md bg-hunter-green text-vanilla-cream font-heading text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">${i + 1}</span>
+              <span class="text-xs sm:text-sm text-nature-800 font-medium leading-relaxed">${item}${badgeHtml}</span>
+            </li>
+          `;
+        }).join('');
+      };
+
+      const btnContainer = document.getElementById('districtButtonsContainer');
+      const detailBoard = document.getElementById('districtDetailBoard');
+      const zoneBadge = document.getElementById('distZoneBadge');
+      const nameTitle = document.getElementById('distNameTitle');
+      const sloganEl = document.getElementById('distSlogan');
+      const tipEl = document.getElementById('distTip');
+      const attrEl = document.getElementById('distAttraction');
+      const foodEl = document.getElementById('distFood');
+      const cafeEl = document.getElementById('distCafe');
+      const hotelEl = document.getElementById('distHotel');
+      const counterBadge = document.getElementById('distCounterBadge');
+      const prevBtn = document.getElementById('prevDistBtn');
+      const nextBtn = document.getElementById('nextDistBtn');
+      const searchInput = document.getElementById('districtSearchInput');
+
+      let currentIndex = 0;
+
+      const updateActiveButtonStyles = () => {
+        document.querySelectorAll('.dist-pill').forEach((p, idx) => {
+          p.className = idx === currentIndex
+            ? 'dist-pill px-3.5 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold transition-all bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749]'
+            : 'dist-pill px-3.5 py-2 rounded-xl font-heading text-xs sm:text-sm font-semibold transition-all bg-vanilla-cream/70 text-hunter-green border-2 border-hunter-green/30 hover:border-hunter-green hover:bg-yellow-green/40';
+        });
+      };
+
+      const renderDistrict = (idx) => {
+        currentIndex = (idx + districtsData.length) % districtsData.length;
+        const distObj = districtsData[currentIndex];
+
+        detailBoard.classList.remove('animate-fade-slide');
+        void detailBoard.offsetWidth;
+        detailBoard.classList.add('animate-fade-slide');
+
+        zoneBadge.textContent = distObj.zone;
+        nameTitle.textContent = distObj.name;
+        sloganEl.textContent = distObj.slogan;
+        tipEl.textContent = distObj.tip;
+        attrEl.innerHTML = formatRichList(distObj.attraction);
+        foodEl.innerHTML = formatRichList(distObj.food);
+        cafeEl.innerHTML = formatRichList(distObj.cafe);
+        hotelEl.innerHTML = formatRichList(distObj.hotel);
+        counterBadge.textContent = `${currentIndex + 1} / ${districtsData.length}`;
+        updateActiveButtonStyles();
+      };
+
+      districtsData.forEach((d, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = d.name;
+        btn.setAttribute('data-search', `${d.name} ${d.zone} ${d.slogan} ${d.attraction} ${d.food} ${d.cafe} ${d.hotel}`.toLowerCase());
+        btn.addEventListener('click', () => renderDistrict(idx));
+        btnContainer.appendChild(btn);
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', () => renderDistrict(currentIndex - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => renderDistrict(currentIndex + 1));
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.trim().toLowerCase();
+          let firstMatchIdx = -1;
+          document.querySelectorAll('.dist-pill').forEach((btn, idx) => {
+            const match = !q || btn.getAttribute('data-search').includes(q);
+            btn.classList.toggle('hidden', !match);
+            if (match && firstMatchIdx === -1) firstMatchIdx = idx;
+          });
+          if (q && firstMatchIdx !== -1 && firstMatchIdx !== currentIndex) {
+            renderDistrict(firstMatchIdx);
+          }
+        });
+      }
+
+      renderDistrict(0);
+
+      // 4. Category Filter
+      const catBtns = document.querySelectorAll('.cat-filter-btn');
+      const catCards = document.querySelectorAll('.dist-cat-card');
+
+      catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetCat = btn.getAttribute('data-cat');
+          catBtns.forEach(b => {
+            b.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition';
+          });
+          btn.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition';
+
+          catCards.forEach(card => {
+            card.classList.toggle('hidden', !(targetCat === 'all' || card.getAttribute('data-card-cat') === targetCat));
+          });
+        });
+      });
+
+      // 5. Lightbox Modal
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+
+      document.querySelectorAll('.gallery-postcard').forEach(card => {
+        card.addEventListener('click', () => {
+          const img = card.querySelector('img');
+          if (img && lightboxModal) {
+            lightboxImg.src = img.src;
+            lightboxCaption.textContent = card.getAttribute('data-caption') || img.alt;
+            lightboxModal.classList.remove('hidden');
+          }
+        });
+      });
+      if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', () => lightboxModal.classList.add('hidden'));
+      if (lightboxModal) lightboxModal.addEventListener('click', (e) => { if (e.target === lightboxModal) lightboxModal.classList.add('hidden'); });
+
+      // 6. Scroll Shadow
+      const mainHeader = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        mainHeader.classList.toggle('shadow-xl', window.scrollY > 20);
+      });
+
+      // 7. ระบบ Hero Scenery Slider
+      const heroSlides = document.querySelectorAll('#heroSliderContainer .hero-slide');
+      const heroDots = document.querySelectorAll('#heroSliderContainer .hero-dot');
+      const heroPrevBtn = document.getElementById('heroPrevBtn');
+      const heroNextBtn = document.getElementById('heroNextBtn');
+      const heroSlideRegionBadge = document.getElementById('heroSlideRegionBadge');
+      const heroSlideCounter = document.getElementById('heroSlideCounter');
+      const heroSlideData = [
+        { badge: '🛶 เรือหัวโทง & ผาหินปูนหาดไร่เลย์' },
+        { badge: '🏝️ ปิเละลากูน & อ่าวมาหยา หมู่เกาะพีพี' },
+        { badge: '🌅 ประภาคารแหลมโตนด เกาะลันตา & เกาะรอก' },
+        { badge: '💎 สระมรกต น้ำตกร้อนคลองท่อม & คลองหรูด' }
+      ];
+      let currentHeroSlide = 0;
+      let heroSliderTimer = null;
+
+      function showHeroSlide(index) {
+        if (!heroSlides.length) return;
+        currentHeroSlide = (index + heroSlides.length) % heroSlides.length;
+        heroSlides.forEach((slide, i) => {
+          if (i === currentHeroSlide) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+        heroDots.forEach((dot, i) => {
+          if (i === currentHeroSlide) {
+            dot.classList.remove('w-2.5', 'bg-vanilla-cream/60');
+            dot.classList.add('w-7', 'bg-yellow-green');
+          } else {
+            dot.classList.remove('w-7', 'bg-yellow-green');
+            dot.classList.add('w-2.5', 'bg-vanilla-cream/60');
+          }
+        });
+        if (heroSlideRegionBadge && heroSlideData[currentHeroSlide]) {
+          heroSlideRegionBadge.textContent = heroSlideData[currentHeroSlide].badge;
+        }
+        if (heroSlideCounter) {
+          heroSlideCounter.textContent = `${currentHeroSlide + 1} / ${heroSlides.length}`;
+        }
+      }
+
+      function startHeroTimer() {
+        clearInterval(heroSliderTimer);
+        heroSliderTimer = setInterval(() => {
+          showHeroSlide(currentHeroSlide + 1);
+        }, 5000);
+      }
+
+      if (heroPrevBtn && heroNextBtn) {
+        heroPrevBtn.addEventListener('click', () => {
+          showHeroSlide(currentHeroSlide - 1);
+          startHeroTimer();
+        });
+        heroNextBtn.addEventListener('click', () => {
+          showHeroSlide(currentHeroSlide + 1);
+          startHeroTimer();
+        });
+        heroDots.forEach(dot => {
+          dot.addEventListener('click', () => {
+            const idx = parseInt(dot.getAttribute('data-slide'), 10);
+            showHeroSlide(idx);
+            startHeroTimer();
+          });
+        });
+        const heroSliderContainer = document.getElementById('heroSliderContainer');
+        if (heroSliderContainer) {
+          let touchStartX = 0;
+          heroSliderContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          }, { passive: true });
+          heroSliderContainer.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 40) {
+              showHeroSlide(diff > 0 ? currentHeroSlide + 1 : currentHeroSlide - 1);
+              startHeroTimer();
+            }
+          }, { passive: true });
+        }
+        startHeroTimer();
+      }
+    });
+  </script>
+</body>
+</html>

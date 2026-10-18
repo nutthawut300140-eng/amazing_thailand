@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภาคเหนือ : จังหวัดเชียงใหม่ — Amazing Thailand ไม่ไปไม่รู้</title>
+  
+  <!-- Google Fonts: Sarabun & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN พร้อม Custom Color Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'hunter-green': '#386641',
+            'sage-green': '#6a994e',
+            'yellow-green': '#a7c957',
+            'vanilla-cream': '#f2e8cf',
+            'blushed-brick': '#bc4749',
+            nature: {
+              50: '#FAF7F0',
+              100: '#F2E8CF',
+              200: '#E2D4B5',
+              300: '#A7C957',
+              500: '#6A994E',
+              700: '#386641',
+              800: '#284B2F',
+              900: '#1B3420',
+            },
+            brick: {
+              DEFAULT: '#BC4749',
+              dark: '#9E3537',
+              light: '#F9EAEB'
+            }
+          },
+          fontFamily: {
+            sans: ['Sarabun', 'sans-serif'],
+            display: ['Prompt', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS สำหรับระบบดีไซน์ "ป้ายประชาสัมพันธ์ & Editorial Magazine" -->
+  <style>
+    :root {
+      --hunter-green: #386641ff;
+      --sage-green: #6a994eff;
+      --yellow-green: #a7c957ff;
+      --vanilla-cream: #f2e8cfff;
+      --blushed-brick: #bc4749ff;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #FAF7F0;
+      color: #284B2F;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Prompt', sans-serif;
+    }
+    .bg-topo {
+      background-color: #FAF7F0;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85 M20 0 Q 5 30, 25 60 T 20 120 M90 0 Q 110 40, 85 80 T 90 120' fill='none' stroke='%23386641' stroke-width='1' stroke-opacity='0.06'/%3E%3C/svg%3E");
+    }
+    .bg-topo-cream {
+      background-color: #F2E8CF;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 30 5, 60 20 T 120 20 M0 50 Q 40 30, 80 55 T 120 50 M0 85 Q 35 105, 75 80 T 120 85' fill='none' stroke='%23386641' stroke-width='1.2' stroke-opacity='0.08'/%3E%3C/svg%3E");
+    }
+    .signboard-card {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 6px 6px 0px #386641;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .signboard-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 9px 9px 0px #BC4749;
+    }
+    .signboard-card-static {
+      background: #FFFFFF;
+      border: 2.5px solid #386641;
+      box-shadow: 7px 7px 0px #386641;
+      position: relative;
+    }
+    .sign-bolt {
+      width: 9px;
+      height: 9px;
+      border-radius: 9999px;
+      background-color: #F2E8CF;
+      border: 2px solid #386641;
+      display: inline-block;
+    }
+    .km-milestone {
+      border-radius: 9999px 9999px 14px 14px;
+      border: 2.5px solid #386641;
+      background: #F2E8CF;
+      box-shadow: 4px 4px 0px #386641;
+      overflow: hidden;
+    }
+    .highway-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      background-color: #386641;
+      color: #F2E8CF;
+      border: 2px solid #F2E8CF;
+      outline: 2px solid #386641;
+      border-radius: 6px;
+      font-family: 'Prompt', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+    .ticket-notch {
+      position: relative;
+    }
+    .ticket-notch::before,
+    .ticket-notch::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #F2E8CF;
+      border: 2.5px solid #386641;
+      border-radius: 9999px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .ticket-notch::before { left: -12px; }
+    .ticket-notch::after { right: -12px; }
+    .rubber-stamp {
+      border: 2.5px dashed #BC4749;
+      color: #BC4749;
+      transform: rotate(-5deg);
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-slide {
+      animation: fadeSlideUp 0.32s ease-out forwards;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    @media (max-width: 640px) {
+      .signboard-card {
+        box-shadow: 4px 4px 0px #386641;
+      }
+      .signboard-card-static {
+        box-shadow: 5px 5px 0px #386641;
+      }
+      .ticket-notch::before,
+      .ticket-notch::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-topo text-nature-800 antialiased flex flex-col min-h-screen overflow-x-hidden selection:bg-yellow-green selection:text-hunter-green">
+
+  <!-- =========================================================================
+       0. TOP HIGHWAY SIGNBOARD BAR
+       ========================================================================= -->
+  <div class="bg-hunter-green text-vanilla-cream border-b-2 border-yellow-green/40 py-2 px-4 text-xs font-heading">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-blushed-brick text-white font-bold uppercase text-[10px]">REGION 01 : NORTH</span>
+        <span class="font-medium">ป้ายประชาสัมพันธ์ภาคเหนือ • <strong class="text-yellow-green">จังหวัดเชียงใหม่</strong></span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-vanilla-cream/90">
+        <span><i class="fa-solid fa-road text-yellow-green mr-1"></i> ทางหลวงแผ่นดิน ทล. 11 & ทล. 107</span>
+        <span>|</span>
+        <span><i class="fa-solid fa-location-dot text-blushed-brick mr-1"></i> ระยะทางจาก กทม. 696 กม.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1. NAVBAR SECTION
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-nature-50/95 backdrop-blur-md border-b-2 border-hunter-green transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-2">
+        
+        <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+          <a href="index.html" class="px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-hunter-green hover:bg-blushed-brick text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] font-heading text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 sm:gap-2 shrink-0 transition-all focus:outline-none">
+            <i class="fa-solid fa-arrow-left text-xs sm:text-sm"></i>
+            <span>กลับหน้าหลัก</span>
+          </a>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+              <span class="text-base sm:text-xl font-extrabold font-heading text-hunter-green tracking-tight leading-tight truncate">
+                ภาคเหนือ : <span class="text-blushed-brick">เชียงใหม่</span>
+              </span>
+              <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-heading font-bold bg-vanilla-cream border border-hunter-green text-hunter-green rounded shrink-0">กม. 696</span>
+            </div>
+            <span class="text-[11px] sm:text-xs tracking-wider text-sage-green font-heading font-semibold block truncate">Amazing Thailand</span>
+          </div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-6 font-heading text-sm font-semibold text-hunter-green" aria-label="เมนูหน้าเชียงใหม่">
+          <a href="#hero" class="hover:text-blushed-brick transition-colors py-1">หน้าแรก</a>
+          <a href="#transport" class="hover:text-blushed-brick transition-colors py-1">การเดินทาง</a>
+          <a href="#districts" class="hover:text-blushed-brick transition-colors py-1">ป้าย 25 อำเภอ</a>
+          <a href="#routes" class="hover:text-blushed-brick transition-colors py-1">รูทแนะนำ</a>
+          <a href="#gallery" class="hover:text-blushed-brick transition-colors py-1">โปสการ์ด</a>
+          <a href="#contact" class="hover:text-blushed-brick transition-colors py-1">ศูนย์ข้อมูล</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-2">
+          <a href="krabi.html" class="px-3.5 py-2 rounded-xl bg-vanilla-cream hover:bg-yellow-green/50 text-hunter-green border-2 border-hunter-green font-heading text-xs font-bold shadow-[2px_2px_0px_#386641] transition"><i class="fa-solid fa-chevron-left mr-1"></i> ภาคใต้ (กระบี่)</a>
+          <a href="loei.html" class="px-3.5 py-2 rounded-xl bg-blushed-brick hover:bg-brick-dark text-white font-heading text-xs font-bold border-2 border-hunter-green shadow-[3px_3px_0px_#386641] transition">ภาคอีสาน (เลย) <i class="fa-solid fa-chevron-right ml-1"></i></a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobileMenuBtn" type="button" aria-label="เปิดเมนูนำทาง" aria-expanded="false" class="p-2.5 rounded-xl bg-vanilla-cream border-2 border-hunter-green text-hunter-green hover:bg-yellow-green/40 focus:outline-none">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t-2 border-hunter-green bg-vanilla-cream px-5 pt-4 pb-6 space-y-2.5 font-heading shadow-2xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-blushed-brick hover:bg-white"><i class="fa-solid fa-house mr-2"></i>กลับหน้าแรกแคมเปญ</a>
+      <a href="#hero" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">หน้าแรกจังหวัดเชียงใหม่</a>
+      <a href="#transport" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">คู่มือการเดินทางสู่เชียงใหม่</a>
+      <a href="#districts" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">สำรวจเจาะลึก 25 อำเภอ</a>
+      <a href="#routes" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ตารางจัดรูทท่องเที่ยว</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">โปสการ์ดภาพบรรยากาศ</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-hunter-green hover:bg-white">ศูนย์ข้อมูลท่องเที่ยว</a>
+      <div class="pt-3 border-t-2 border-dashed border-hunter-green/30 grid grid-cols-2 gap-2">
+        <a href="loei.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">⛰️ อีสาน: เลย</a>
+        <a href="nakhonnayok.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🍃 กลาง: นครนายก</a>
+        <a href="chonburi.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🌊 ตะวันออก: ชลบุรี</a>
+        <a href="prachuap.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold">🏖️ ตะวันตก: ประจวบฯ</a>
+        <a href="krabi.html" class="text-xs px-3 py-2 rounded-xl bg-white border-2 border-hunter-green text-hunter-green font-bold col-span-2 text-center">🏝️ ใต้: กระบี่</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- =========================================================================
+         2. HERO SECTION (ป้ายประชาสัมพันธ์จังหวัดเชียงใหม่)
+         ========================================================================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-vanilla-cream/85 via-transparent to-transparent pt-8 pb-16 lg:pt-12 lg:pb-24 border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Editorial Masthead -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-8 border-b-2 border-hunter-green text-xs font-heading font-bold text-hunter-green">
+          <div class="flex items-center gap-2">
+            <span class="highway-badge"><i class="fa-solid fa-road"></i> ทล. 11 / ทล. 107 / ทล. 108</span>
+            <span>คู่มือป้ายประชาสัมพันธ์ประจำจังหวัดเชียงใหม่</span>
+          </div>
+          <span class="text-blushed-brick">● NORTHERN REGION REPRESENTATIVE</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-5 min-w-0">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[4px_4px_0px_#BC4749]">
+              <span class="sign-bolt"></span>
+              <span class="font-heading text-xs sm:text-sm font-bold text-yellow-green">🌲 ตัวแทนภาคเหนือ • Amazing Thailand 1 ภาค 1 จังหวัด</span>
+              <span class="sign-bolt"></span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-hunter-green leading-tight">
+              มนต์เสน่ห์แห่งล้านนา <br>
+              <span class="inline-block mt-1 px-4 py-1 bg-blushed-brick text-vanilla-cream rounded-2xl border-2 border-hunter-green shadow-[5px_5px_0px_#386641]">
+                จังหวัดเชียงใหม่
+              </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-nature-800 leading-relaxed max-w-2xl">
+              “ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตา นามล้ำค่านครพิงค์” — ออกเดินทางสู่อ้อมกอดของขุนเขาและสายหมอก สัมผัสมนต์เสน่ห์แห่งวัฒนธรรมล้านนาอันอบอุ่น <strong class="text-hunter-green font-bold">ครอบคลุมทั้ง 25 อำเภอ</strong> ตั้งแต่ยอดดอยอินทนนท์หลังคาแห่งสยาม ดอยหลวงเชียงดาว หมู่บ้านแม่กำปอง นาขั้นบันไดป่าบงเปียง ไปจนถึงกลิ่นหอมของกาแฟคั่วบดและรสชาติอาหารเหนือระดับมิชลินไกด์ที่จะเติมเต็มทุกแรงบันดาลใจของการเดินทาง!
+            </p>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+              <a href="#districts" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-blushed-brick hover:bg-brick-dark text-white font-heading font-bold border-2 border-hunter-green shadow-[5px_5px_0px_#386641] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all">
+                <i class="fa-solid fa-signs-post"></i>
+                <span>เปิดป้ายสำรวจ 25 อำเภอ</span>
+              </a>
+              <a href="#transport" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green font-heading font-bold shadow-[5px_5px_0px_#6A994E] transition-all">
+                <i class="fa-solid fa-plane-departure text-blushed-brick"></i>
+                <span>ดูวิธีเดินทางไปเชียงใหม่</span>
+              </a>
+            </div>
+
+            <!-- ป้ายสถิติ 3 ช่อง -->
+            <div class="pt-4 grid grid-cols-3 gap-2.5 sm:gap-3 max-w-lg">
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#386641] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-hunter-green">25 อำเภอ</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">ขุนเขา & วัฒนธรรมล้านนา</p>
+              </div>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-blushed-brick">2,565 ม.</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">ยอดดอยอินทนนท์</p>
+              </div>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border-2 border-hunter-green shadow-[3px_3px_0px_#6A994E] text-center">
+                <p class="text-lg sm:text-2xl font-extrabold font-heading text-hunter-green">Michelin</p>
+                <p class="text-[10px] sm:text-[11px] font-heading font-semibold text-sage-green">เมืองอาหารระดับโลก</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Signboard Showcase (Interactive Carousel) + KM Milestone -->
+          <div class="lg:col-span-5 relative w-full min-w-0">
+            <div class="signboard-card-static rounded-3xl p-2.5 sm:p-4 bg-vanilla-cream w-full">
+              <div class="flex items-center justify-between px-3 py-2 mb-2.5 sm:mb-3 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold">
+                <span class="sign-bolt"></span>
+                <span><i class="fa-solid fa-mountain-sun text-yellow-green mr-1.5"></i> ป้ายทัศนียภาพล้านนา • CHIANG MAI</span>
+                <span class="sign-bolt"></span>
+              </div>
+
+              <!-- กรอบรูปสไลเดอร์ย่อ-ขยายตามหน้าจอ พร้อมเลื่อนดูได้ 4 มุมมอง -->
+              <div id="heroSliderContainer" class="relative w-full rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3.8] xl:aspect-[4/3.6] border-2 border-hunter-green group select-none bg-hunter-green/10">
+                
+                <!-- Slide 1 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-100 pointer-events-auto" data-index="0" data-region="🌲 วัดพระธาตุดอยสุเทพ & ป่าบงเปียง">
+                  <img 
+                    src="https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?auto=format&fit=crop&w=900&q=80" 
+                    alt="วัดพระธาตุดอยสุเทพและทิวเขาจังหวัดเชียงใหม่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Chiang+Mai+1';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-sparkles mr-1"></i> เสน่ห์เมืองต้องห้ามพลาด</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“มาเชียงใหม่กี่ครั้งก็ไม่เคยซ้ำ เพราะทั้ง 25 อำเภอมีเสน่ห์เฉพาะตัว ตั้งแต่คาเฟ่นิมมานฯ ไปจนถึงนาขั้นบันไดป่าบงเปียง!”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="1" data-region="⛰️ ทะเลหมอกกิ่วแม่ปาน ดอยอินทนนท์">
+                  <img 
+                    src="https://images.unsplash.com/photo-1512553353614-82a7370096dc?auto=format&fit=crop&w=900&q=80" 
+                    alt="ทะเลหมอกดอยอินทนนท์ เชียงใหม่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/6A994E/F2E8CF?text=Chiang+Mai+2';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-mountain-sun mr-1"></i> หลังคาแห่งสยาม 2,565 เมตร</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“สูดอากาศหนาวเลขตัวเดียว ชมแสงแรกเหนือทะเลหมอกกิ่วแม่ปาน และสักการะพระมหาธาตุเจดีย์คู่บนยอดดอยอินทนนท์”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="2" data-region="🍜 ข้าวซอย & อาหารเหนือมิชลินไกด์">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=900&q=80" 
+                    alt="ข้าวซอยและอาหารเหนือเชียงใหม่" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/BC4749/F2E8CF?text=Khao+Soi';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-utensils mr-1"></i> รสชาติล้านนาระดับมิชลิน</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“ลิ้มรสข้าวซอยแกงกะทิเข้มข้น น้ำพริกอ่อง ไส้อั่วสมุนไพร และขันโตกพื้นเมืองแท้ที่ได้รับการการันตีจากมิชลินไกด์”</p>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0 pointer-events-none" data-index="3" data-region="☕ คาเฟ่ Specialty & หมู่บ้านแม่กำปอง">
+                  <img 
+                    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" 
+                    alt="คาเฟ่เชียงใหม่และหมู่บ้านแม่กำปอง" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.src='https://placehold.co/800x800/386641/F2E8CF?text=Cafe+Chiang+Mai';"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-hunter-green/90 via-hunter-green/20 to-black/25"></div>
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3.5 sm:left-3.5 sm:right-3.5 text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-hunter-green/90 backdrop-blur-md border-2 border-vanilla-cream z-20">
+                    <p class="text-[11px] sm:text-xs font-bold text-yellow-green uppercase font-heading"><i class="fa-solid fa-mug-hot mr-1"></i> เมืองหลวงแห่งกาแฟไทย</p>
+                    <p class="text-[11px] sm:text-sm font-heading font-medium text-vanilla-cream mt-0.5 line-clamp-2">“จิบกาแฟอาราบิก้าคั่วสดริมลำธารที่หมู่บ้านแม่กำปอง-เทพเสด็จ และเช็กอินคาเฟ่แชมป์ลาเต้อาร์ตระดับโลก”</p>
+                  </div>
+                </div>
+
+                <!-- Top Floating Badges -->
+                <div class="absolute top-2.5 left-2.5 right-2.5 sm:top-3 sm:left-3 sm:right-3 flex items-center justify-between z-20 pointer-events-none">
+                  <span id="heroSlideRegionBadge" class="pointer-events-auto px-2.5 sm:px-3 py-1 rounded-xl bg-hunter-green/90 backdrop-blur-md text-vanilla-cream font-heading text-[11px] sm:text-xs font-bold border-2 border-yellow-green/50 shadow-md truncate max-w-[70%]">
+                    🌲 วัดพระธาตุดอยสุเทพ & ป่าบงเปียง
+                  </span>
+                  <span id="heroSlideCounter" class="pointer-events-auto px-2 sm:px-2.5 py-1 rounded-xl bg-black/60 backdrop-blur-md text-vanilla-cream font-heading font-bold text-[11px] sm:text-xs border border-white/20">
+                    1 / 4
+                  </span>
+                </div>
+
+                <!-- Prev & Next Buttons -->
+                <button id="heroPrevBtn" type="button" aria-label="ดูภาพก่อนหน้า" class="absolute left-2 sm:left-2.5 top-[42%] -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-white text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 cursor-pointer">
+                  <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
+                </button>
+                <button id="heroNextBtn" type="button" aria-label="ดูภาพถัดไป" class="absolute right-2 sm:right-2.5 top-[42%] -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-vanilla-cream/90 hover:bg-white text-hunter-green border-2 border-hunter-green shadow-[2px_2px_0px_#386641] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 cursor-pointer">
+                  <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
+                </button>
+
+                <!-- 4 Dots Navigation Indicator -->
+                <div id="heroDotsList" class="absolute top-11 sm:top-12 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20 bg-black/40 backdrop-blur-md px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full border border-white/20">
+                  <button type="button" class="hero-dot w-5 h-2 rounded-full bg-yellow-green transition-all cursor-pointer" data-index="0" aria-label="สไลด์ 1"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="1" aria-label="สไลด์ 2"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="2" aria-label="สไลด์ 3"></button>
+                  <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer" data-index="3" aria-label="สไลด์ 4"></button>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- หลักกิโลเมตรจำลอง -->
+            <div class="hidden sm:flex km-milestone w-24 lg:w-28 flex-col items-center text-center absolute -top-5 right-4 lg:top-16 lg:right-auto lg:-left-6 z-30">
+              <div class="w-full bg-blushed-brick text-white py-1 border-b-2 border-hunter-green font-heading">
+                <p class="text-[10px] font-bold">ทล. 11</p>
+              </div>
+              <div class="py-1.5 lg:py-2 px-2 font-heading">
+                <p class="text-[10px] font-bold text-sage-green">เชียงใหม่</p>
+                <p class="text-xl lg:text-2xl font-extrabold text-hunter-green leading-tight">696</p>
+                <p class="text-[10px] font-bold text-hunter-green">กม. จาก กทม.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. TRANSPORTATION GUIDE SECTION
+         ========================================================================= -->
+    <section id="transport" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-route"></i> TRANSPORTATION GUIDE</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">การเดินทางสู่เชียงใหม่ สะดวกยังไง ไปยังไง?</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">สนามบิน CNX</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">1. เครื่องบิน (เร็วที่สุด)</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              บินตรงลง <strong>สนามบินนานาชาติเชียงใหม่ (CNX)</strong> จากสุวรรณภูมิ/ดอนเมือง ใช้เวลา 1 ชม. 15 นาที สนามบินอยู่ห่างคูเมืองเพียง 10-15 นาที
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-sage-green text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-train-subway"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ขบวน 9 / 10</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">2. รถไฟด่วนพิเศษ CNR</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ขบวนด่วนพิเศษอุตราวิถี (รถนอนแอร์รุ่นใหม่สีแดง-ขาว) จากสถานีกลางกรุงเทพอภิวัฒน์ หลับสบายตื่นเช้าชมวิวสะพานทาชมพูและอุโมงค์ขุนตาน
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">ทล.1 / ทล.11</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">3. รถยนต์ & รถทัวร์ VIP</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ขับรถผ่านทางหลวงหมายเลข 1 (พหลโยธิน) ต่อด้วยทางหลวงหมายเลข 11 ระยะทาง 696 กม. หรือนั่งรถทัวร์ VIP เฟิร์สคลาสจากหมอชิต 2 ถึงอาเขต
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-xl border-2 border-hunter-green">
+                <i class="fa-solid fa-truck-pickup"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-white border border-hunter-green font-heading text-[11px] font-bold text-hunter-green">สี่ล้อแดง</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-hunter-green">4. การเดินทางในจังหวัด</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ในเมืองมี <strong>รถสี่ล้อแดง</strong>, RTC City Bus และ Grab ส่วนการไปต่างอำเภอมีรถสองแถวสีเหลือง/ส้ม/ขาวที่ขนส่งช้างเผือก หรือเช่ารถขับขึ้นดอยสะดวกที่สุด
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. INTERACTIVE 25 DISTRICTS EXPLORER (ป้ายเจาะลึกครบ 25 อำเภอเชียงใหม่)
+         ========================================================================= -->
+    <section id="districts" class="py-20 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-xl bg-hunter-green text-vanilla-cream font-heading text-xs font-bold uppercase shadow-[3px_3px_0px_#BC4749]">
+            <span class="sign-bolt"></span>
+            <span>Complete 25 Districts Signboard Directory</span>
+            <span class="sign-bolt"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-hunter-green">
+            ป้ายข้อมูลเจาะลึกจังหวัดเชียงใหม่
+          </h2>
+        </div>
+
+        <!-- แผงควบคุมการค้นหาและเลือกอำเภอทั้ง 25 อำเภอ -->
+        <div class="signboard-card-static p-5 sm:p-6 rounded-3xl bg-white mb-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 pb-4 border-b-2 border-dashed border-hunter-green/25">
+            <div>
+              <span class="font-heading font-extrabold text-hunter-green text-base flex items-center gap-2">
+                <i class="fa-solid fa-signs-post text-blushed-brick"></i> ป้ายบอกทางทั้ง 25 อำเภอของเชียงใหม่:
+              </span>
+            </div>
+
+            <!-- ช่องค้นหาด่วน (Quick Filter Input) -->
+            <div class="relative w-full md:w-80">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-green text-sm"></i>
+              <input 
+                id="districtSearchInput" 
+                type="text" 
+                placeholder="ค้นหาอำเภอ, ที่เที่ยว, มิชลิน, คาเฟ่..." 
+                class="w-full pl-9 pr-4 py-2 rounded-xl bg-vanilla-cream/60 border-2 border-hunter-green text-xs sm:text-sm font-heading text-hunter-green placeholder:text-hunter-green/50 focus:outline-none focus:bg-white"
+              >
+            </div>
+          </div>
+
+          <div id="districtButtonsContainer" class="flex flex-wrap gap-2">
+            <!-- ปุ่มทั้ง 25 อำเภอจะถูกสร้างโดย JavaScript -->
+          </div>
+        </div>
+
+        <!-- แถบปุ่มกรองหมวดหมู่ + ปุ่มเลื่อนอำเภอก่อนหน้า/ถัดไป -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <div class="flex flex-wrap gap-2">
+            <button type="button" data-cat="all" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition">แสดงครบทั้ง 4 หมวด</button>
+            <button type="button" data-cat="attraction" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏞️ ที่เที่ยว & วัด</button>
+            <button type="button" data-cat="food" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🍜 ร้านอาหาร & มิชลิน</button>
+            <button type="button" data-cat="cafe" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">☕ คาเฟ่แนะนำ</button>
+            <button type="button" data-cat="hotel" class="cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition">🏨 ที่พักแนะนำ</button>
+          </div>
+
+          <div class="flex items-center gap-2 font-heading">
+            <button id="prevDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              <i class="fa-solid fa-chevron-left mr-1"></i> อำเภอก่อนหน้า
+            </button>
+            <span id="distCounterBadge" class="px-3 py-1.5 rounded-xl bg-hunter-green text-yellow-green text-xs font-extrabold border-2 border-hunter-green">
+              1 / 25
+            </span>
+            <button id="nextDistBtn" type="button" class="px-3.5 py-2 rounded-xl bg-white hover:bg-vanilla-cream text-hunter-green border-2 border-hunter-green text-xs font-bold shadow-[2px_2px_0px_#386641] transition">
+              อำเภอถัดไป <i class="fa-solid fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- กล่องป้ายแสดงรายละเอียดของอำเภอที่เลือก (Ticket & Signboard Detail Card) -->
+        <div id="districtDetailBoard" class="signboard-card-static ticket-notch rounded-3xl overflow-hidden bg-white">
+          
+          <!-- ส่วนหัวป้ายอำเภอ -->
+          <div class="bg-hunter-green text-vanilla-cream p-6 sm:p-8 border-b-2 border-hunter-green flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div>
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span id="distZoneBadge" class="px-3 py-0.5 rounded-md bg-yellow-green text-hunter-green font-heading text-xs font-extrabold uppercase"></span>
+                <span class="px-2.5 py-0.5 rounded-md bg-white/15 text-vanilla-cream font-heading text-xs font-semibold">CHIANG MAI DISTRICT GUIDE</span>
+              </div>
+              <h3 id="distNameTitle" class="text-2xl sm:text-3xl font-extrabold font-heading text-white"></h3>
+              <p id="distSlogan" class="text-sm sm:text-base text-yellow-green font-heading font-medium mt-1"></p>
+            </div>
+            <div class="bg-vanilla-cream text-hunter-green px-5 py-3.5 rounded-2xl border-2 border-yellow-green lg:max-w-sm shrink-0 shadow-md">
+              <p class="text-xs font-heading font-extrabold text-blushed-brick uppercase"><i class="fa-solid fa-compass mr-1"></i> ทิปส์การเดินทาง</p>
+              <p id="distTip" class="text-xs sm:text-sm font-medium text-hunter-green mt-1 leading-snug"></p>
+            </div>
+          </div>
+
+          <!-- การ์ดข้อมูล 4 หมวดหมู่ แสดงรายการแยกเป็นข้อๆ พร้อมป้าย Badge -->
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-nature-50">
+            
+            <!-- หมวด 1: สถานที่ท่องเที่ยว & วัด -->
+            <article data-card-cat="attraction" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#386641] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-hunter-green text-vanilla-cream flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Attractions & Temples</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏞️ สถานที่ท่องเที่ยว & วัดดัง</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distAttraction" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <!-- หมวด 2: ร้านอาหารเด็ด & มิชลิน -->
+            <article data-card-cat="food" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#BC4749] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-blushed-brick text-white flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-blushed-brick uppercase block">Local Food & Michelin Guide</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🍜 ร้านอาหารเด็ด & มิชลิน</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distFood" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <!-- หมวด 3: คาเฟ่บรรยากาศดี -->
+            <article data-card-cat="cafe" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#6A994E] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-sage-green text-white flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-sage-green uppercase block">Specialty Cafes</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">☕ คาเฟ่ & จุดเช็กอิน</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distCafe" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+            <!-- หมวด 4: ที่พัก & โรงแรม -->
+            <article data-card-cat="hotel" class="dist-cat-card bg-white rounded-2xl p-6 border-2 border-hunter-green shadow-[5px_5px_0px_#A7C957] space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-hunter-green/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-yellow-green text-hunter-green flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-bed"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-heading font-bold text-hunter-green uppercase block">Where to Stay</span>
+                    <h4 class="text-lg font-extrabold font-heading text-hunter-green">🏨 ที่พัก โฮมสเตย์ & รีสอร์ท</h4>
+                  </div>
+                </div>
+                <span class="sign-bolt"></span>
+              </div>
+              <ul id="distHotel" class="space-y-2.5 text-sm text-nature-800"></ul>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. RECOMMENDED TRAVEL ROUTES SECTION
+         ========================================================================= -->
+    <section id="routes" class="py-16 bg-white border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="highway-badge"><i class="fa-solid fa-map-signs"></i> SMART ITINERARY PASS</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">ป้ายจัดรูทเที่ยวเชียงใหม่เชื่อมโยงอำเภอยอดฮิต</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-hunter-green text-yellow-green font-heading text-xs font-bold">รูทที่ 1 : สายเหนือยอดฮิต</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">เมือง ➔ แม่ริม ➔ แม่แตง ➔ เชียงดาว</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ไหว้พระธาตุดอยสุเทพ ขึ้นม่อนแจ่ม (แม่ริม) นอนแพเขื่อนแม่งัด (แม่แตง) และไปสบตาดอยหลวงเชียงดาว-เมืองคอง
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-blushed-brick text-white font-heading text-xs font-bold">รูทที่ 2 : สายตะวันออกสโลว์ไลฟ์</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">สันกำแพง ➔ แม่ออน ➔ ดอยสะเก็ด</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ทานข้าว 5 สีมิชลินมีนา มีข้าว แช่น้ำพุร้อนสันกำแพง นอนโฮมสเตย์แม่กำปอง-แม่ลาย และจิบกาแฟเทพเสด็จ
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-sage-green text-white font-heading text-xs font-bold">รูทที่ 3 : สายใต้พิชิตหลังคาไทย</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">หางดง ➔ สันป่าตอง ➔ จอมทอง ➔ แม่แจ่ม</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              แวะเก๊าไม้ล้านนา พิชิตยอดดอยอินทนนท์-กิ่วแม่ปาน แล้วเลี้ยวลงไปชมนาขั้นบันไดป่าบงเปียง (แม่แจ่ม)
+            </p>
+          </div>
+
+          <div class="signboard-card p-6 rounded-2xl bg-vanilla-cream/50 space-y-3">
+            <span class="inline-block px-3 py-1 rounded-md bg-yellow-green text-hunter-green font-heading text-xs font-bold">รูทที่ 4 : สายเหนือสุดแดนสยาม</span>
+            <h3 class="text-lg font-extrabold font-heading text-hunter-green">ไชยปราการ ➔ ฝาง ➔ แม่อาย</h3>
+            <p class="text-xs sm:text-sm text-nature-800 leading-relaxed">
+              ชิมส้มสายน้ำผึ้งไชยปราการ ขึ้นดอยอ่างขางและไร่ชา 2000 แช่น้ำพุร้อนฝาง และชมเจดีย์แก้ววัดท่าตอนริมน้ำกก
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. GALLERY SECTION (โปสการ์ดคลิกขยายใหญ่ได้)
+         ========================================================================= -->
+    <section id="gallery" class="py-16 bg-topo-cream border-b-2 border-hunter-green">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="highway-badge mb-2"><i class="fa-solid fa-camera"></i> POSTCARD GALLERY</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-hunter-green">โปสการ์ดภาพบรรยากาศจังหวัดเชียงใหม่</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🌲 นาขั้นบันไดป่าบงเปียง อำเภอแม่แจ่ม จังหวัดเชียงใหม่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?auto=format&fit=crop&w=800&q=80" alt="นาขั้นบันไดป่าบงเปียง เชียงใหม่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Chiang+Mai+1';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🌲 นาขั้นบันไดป่าบงเปียง</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="⛰️ ทะเลหมอกกิ่วแม่ปาน อุทยานแห่งชาติดอยอินทนนท์ อ.จอมทอง">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1512553353614-82a7370096dc?auto=format&fit=crop&w=800&q=80" alt="ทะเลหมอกดอยอินทนนท์ เชียงใหม่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/6A994E/F2E8CF?text=Chiang+Mai+2';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>⛰️ ทะเลหมอกดอยอินทนนท์</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="🍜 ข้าวซอยและขันโตกอาหารเหนือรางวัลมิชลินไกด์ เชียงใหม่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80" alt="ข้าวซอยและอาหารเหนือเชียงใหม่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/BC4749/F2E8CF?text=Khao+Soi';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>🍜 ข้าวซอยมิชลินไกด์</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+          <div class="gallery-postcard signboard-card rounded-2xl p-3 bg-white cursor-pointer group" data-caption="☕ คาเฟ่ Specialty Coffee และหมู่บ้านแม่กำปอง เชียงใหม่">
+            <div class="rounded-xl overflow-hidden aspect-square border border-hunter-green">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="คาเฟ่เชียงใหม่" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x600/386641/F2E8CF?text=Cafe+Chiang+Mai';">
+            </div>
+            <p class="font-heading font-bold text-xs text-hunter-green mt-2.5 flex justify-between"><span>☕ คาเฟ่ Specialty เชียงใหม่</span><i class="fa-solid fa-expand text-blushed-brick"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CONTACT & LOCATION SECTION (Placeholder)
+         ========================================================================= -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="highway-badge !bg-blushed-brick">TOURIST INFORMATION</span>
+            <h2 class="text-2xl font-extrabold font-heading text-hunter-green">ศูนย์บริการข้อมูลท่องเที่ยวจังหวัดเชียงใหม่</h2>
+            <!-- PLACEHOLDER: แก้ไขที่อยู่และเบอร์โทรศัพท์จริงได้ที่นี่ -->
+            <div class="signboard-card p-5 rounded-2xl bg-vanilla-cream/50 space-y-2">
+              <p class="text-sm text-nature-800 leading-relaxed">
+                <strong>การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานเชียงใหม่ :</strong><br>
+                105/1 ถนนเชียงใหม่-ลำพูน ตำบลวัดเกต อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ 50000
+              </p>
+              <p class="text-sm text-hunter-green font-bold">
+                <i class="fa-solid fa-phone text-blushed-brick mr-2"></i> โทร: 053-248-604 หรือ สายด่วน ททท. 1672
+              </p>
+            </div>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-hunter-green hover:bg-blushed-brick text-vanilla-cream font-heading text-xs font-bold border-2 border-hunter-green transition">
+                <i class="fa-solid fa-arrow-left"></i> กลับหน้าหลักรวม 6 ภาค
+              </a>
+              <a href="loei.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vanilla-cream hover:bg-yellow-green text-hunter-green font-heading text-xs font-bold border-2 border-hunter-green transition">
+                ไปต่อภาคอีสาน (จ.เลย) <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7 signboard-card-static p-4 rounded-3xl bg-vanilla-cream">
+            <div class="w-full h-72 rounded-2xl overflow-hidden border-2 border-hunter-green">
+              <!-- PLACEHOLDER: แผนที่จังหวัดเชียงใหม่ -->
+              <iframe 
+                title="แผนที่จังหวัดเชียงใหม่" 
+                src="https://maps.google.com/maps?q=Chiang+Mai+Thailand&t=&z=10&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-nature-900/90 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="max-w-3xl w-full bg-vanilla-cream rounded-3xl p-4 border-4 border-hunter-green shadow-2xl">
+      <div class="flex items-center justify-between pb-3 mb-3 border-b-2 border-hunter-green">
+        <span id="lightboxCaption" class="font-heading font-bold text-sm sm:text-base text-hunter-green"></span>
+        <button id="closeLightboxBtn" type="button" class="w-9 h-9 rounded-xl bg-blushed-brick text-white font-bold flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="rounded-2xl overflow-hidden border-2 border-hunter-green max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="ภาพขยาย" class="w-full h-full object-contain bg-nature-900">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       ========================================================================= -->
+  <footer class="bg-hunter-green text-vanilla-cream py-10 border-t-4 border-blushed-brick">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <!-- PLACEHOLDER: แก้ไขเครดิตผู้จัดทำได้ที่นี่ -->
+      <p>© 2026 Amazing Thailand 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ — ภาคเหนือ จังหวัดเชียงใหม่</p>
+      <div class="flex flex-wrap gap-3 font-heading font-semibold">
+        <a href="index.html" class="hover:text-yellow-green">หน้าหลัก</a>
+        <span>•</span>
+        <a href="loei.html" class="hover:text-yellow-green">เลย</a>
+        <span>•</span>
+        <a href="nakhonnayok.html" class="hover:text-yellow-green">นครนายก</a>
+        <span>•</span>
+        <a href="chonburi.html" class="hover:text-yellow-green">ชลบุรี</a>
+        <span>•</span>
+        <a href="prachuap.html" class="hover:text-yellow-green">ประจวบฯ</a>
+        <span>•</span>
+        <a href="krabi.html" class="hover:text-yellow-green">กระบี่</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. VANILLA JAVASCRIPT (ฐานข้อมูลครบ 25 อำเภอเชียงใหม่ + การ์ดย่อย Badge + ค้นหาด่วน)
+       ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      let isMenuOpen = false;
+
+      const toggleMenu = () => {
+        isMenuOpen = !isMenuOpen;
+        mobileMenu.classList.toggle('hidden', !isMenuOpen);
+        menuIcon.classList.toggle('fa-bars', !isMenuOpen);
+        menuIcon.classList.toggle('fa-xmark', isMenuOpen);
+      };
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+      document.querySelectorAll('.mobile-nav-link').forEach(l => l.addEventListener('click', () => { if (isMenuOpen) toggleMenu(); }));
+
+      // 2. ข้อมูลเจาะลึกครบทั้ง 25 อำเภอของจังหวัดเชียงใหม่
+      const districtsData = [
+        {
+          id: 1, name: '1. อ.เมืองเชียงใหม่', zone: 'โซนเมืองและวัฒนธรรม',
+          slogan: 'ศูนย์กลางประวัติศาสตร์ 700 ปี คาเฟ่ระดับโลก และอาหารมิชลินไกด์',
+          tip: 'ใช้รถสี่ล้อแดง Grab หรือเช่ามอเตอร์ไซค์เที่ยวรอบคูเมือง นิมมานฯ และขึ้นดอยสุเทพได้สะดวกมาก',
+          attraction: 'วัดพระธาตุดอยสุเทพราชวรวิหาร, ประตูท่าแพ & ถนนคนเดินวันอาทิตย์, วัดเจดีย์หลวงวรวิหาร, วัดอุโมงค์ (สวนพุทธธรรม), วัดผาลาด (วัดลับกลางป่าบนดอยสุเทพ) และชุมชนศิลปะบ้านข้างวัด',
+          food: 'ข้าวซอยลุงประกิจกาดก้อม (Michelin Bib Gourmand), เฮือนม่วนใจ๋ (อาหารเหนือต้นตำรับรางวัลมิชลิน), สุกี้ช้างเผือกคั่วกระทะหอมกรุ่น และสตรีทฟู้ดกาดหน้า มช.',
+          cafe: 'Ristr8to Original นิมมานฯ (แชมป์ World Latte Art), The Baristro at Ping River ริมน้ำปิง, Chom Cafe สวนป่ามอสแฟนตาซี และ Transit No.8 ฟีลญี่ปุ่น',
+          hotel: 'Raya Heritage รีสอร์ทหรู 5 ดาวริมแม่น้ำปิง, U Chiang Mai บูทีคโฮเทลใจกลางท่าแพ (พักได้ 24 ชม.) และ Art Mai Gallery Nimman Hotel'
+        },
+        {
+          id: 2, name: '2. อ.จอมทอง', zone: 'โซนใต้ (ยอดดอยสูงสุด)',
+          slogan: 'ประตูสู่อินทนนท์ หลังคาแห่งสยาม ทะเลหมอกกิ่วแม่ปาน และน้ำตกอลังการ',
+          tip: 'มีรถสองแถวสีเหลืองสายเชียงใหม่-จอมทอง ต่อรถขึ้นดอยอินทนนท์ หรือขับรถยนต์ส่วนตัวขึ้นดอยได้ถนนดีมาก',
+          attraction: 'อุทยานแห่งชาติดอยอินทนนท์ (จุดสูงสุดแดนสยาม 2,565 ม.), เส้นทางศึกษาธรรมชาติกิ่วแม่ปาน, พระมหาธาตุนภเมทนีดล-นภพลภูมิสิริ, น้ำตกวชิรธาร, น้ำตกแม่ยะ และวัดพระธาตุศรีจอมทองวรวิหาร (พระธาตุประจำปีชวด)',
+          food: 'สโมสรโครงการหลวงดอยอินทนนท์ (ปลาเทรุตสายรุ้งอบสมุนไพร ผักสดโครงการหลวง), ข้าวซอยอินทนนท์ และหมูกระทะหน้าเต็นท์ท้าลมหนาว',
+          cafe: 'มนทร์มั่งมี คาเฟ่ (วิวทุ่งนาและเทือกเขาอินทนนท์), กาแฟสดอาราบิก้าบ้านแม่กลางหลวง (ชงสดโดยชาวปกาเกอะญอ)',
+          hotel: 'แม่กลางหลวงฮิลล์ (วิวนาขั้นบันได), Touch Star Resort และลานแคมป์ปิ้งสนแม่กลางดอยอินทนนท์'
+        },
+        {
+          id: 3, name: '3. อ.แม่แจ่ม', zone: 'โซนตะวันตก (นาขั้นบันได)',
+          slogan: 'ดินแดนสโลว์ไลฟ์ นาขั้นบันไดป่าบงเปียง และผ้าซิ่นตีนจกมรดกภูมิปัญญา',
+          tip: 'เดินทางผ่านทางขึ้นดอยอินทนนท์เลี้ยวขวาที่ด่านที่ 2 ลงสู่แม่แจ่ม แนะนำรถยนต์ส่วนตัวหรือเช่าเหมารถชาวบ้านขึ้นป่าบงเปียง',
+          attraction: 'นาขั้นบันไดบ้านป่าบงเปียง (สวยที่สุดแห่งหนึ่งในเอเชีย), วัดพุทธเอ้น (โบสถ์กลางน้ำอายุร้อยปี), ชุมชนทอผ้าซิ่นตีนจกบ้านทัพ-บ้านกองกาน และจุดชมวิวทะเลหมอกม่อนหมาก',
+          food: 'ครัวฮ่อมดอย (ลาบปลาคั่ว แกงแคไก่บ้าน), ร้านแจ่มโภชนา และน้ำพริกหนุ่มแคบหมูพื้นบ้านแม่แจ่ม',
+          cafe: 'บ้านบนดอย คาเฟ่ (จิบกาแฟดริปชมวิวนาขั้นบันไดป่าบงเปียง), Chae Hom Cafe เรือนไม้ล้านนาอบอุ่น',
+          hotel: 'มาฉิโพ โฮมสเตย์ ป่าบงเปียง (กระท่อมไม้ไผ่กลางนาขั้นบันได ดูดาวเต็มฟ้า) และเฮือนแรมแจ่มเมือง'
+        },
+        {
+          id: 4, name: '4. อ.เชียงดาว', zone: 'โซนเหนือ (ขุนเขาหินปูน)',
+          slogan: 'โอบกอดดอยหลวงเชียงดาว เมืองคองสโลว์ไลฟ์ และทะเลหมอกสันป่าเกี๊ยะ',
+          tip: 'ใช้ทางหลวงหมายเลข 107 (เชียงใหม่-ฝาง) มีรถบัสสีส้มสายเชียงใหม่-ท่าตอนผ่าน หรือขับรถยนต์ส่วนตัวเที่ยวได้สะดวก',
+          attraction: 'ดอยหลวงเชียงดาว (พื้นที่สงวนชีวมณฑล UNESCO), หมู่บ้านลับเมืองคอง (ล่องแพไม้ไผ่ชมหมอกริมน้ำแม่กึด), ถ้ำเชียงดาว และดอยแม่ตะมาน (สันป่าเกี๊ยะ)',
+          food: 'ขาหมูเชียงดาว (ตุ๋นยาจีนหนังเด้งระดับตำนาน), ร้านเสน่ห์ดอยหลวง และโจ๊กหมูต้มยำหน้าถ้ำเชียงดาว',
+          cafe: 'Hoklhok Cafe (ฮกหลก คาเฟ่ไม้สไตล์ญี่ปุ่น), Chiang Dao Rest Stop และ Atmosphere Resort & Cafe วิวดอยหลวงเต็มตา',
+          hotel: 'บ้านระเบียงดาว โฮมสเตย์ (ตื่นมาสบตาดอยหลวง), Azalea Village Resort และโฮมสเตย์ริมน้ำเมืองคอง'
+        },
+        {
+          id: 5, name: '5. อ.แม่ริม', zone: 'โซนเหนือใกล้เมือง',
+          slogan: 'ยอดดอยม่อนแจ่ม สวนดอกไม้เมืองหนาว Canopy Walkway และรีสอร์ทระดับโลก',
+          tip: 'ห่างจากตัวเมืองเชียงใหม่เพียง 20-30 นาที ขับรถเที่ยวตามเส้นทางแม่ริม-สะเมิง (ทล.1096) สะดวกมาก',
+          attraction: 'ดอยม่อนแจ่ม (ทะเลหมอกและฟอร์มูล่าม้ง), สวนพฤกษศาสตร์สมเด็จพระนางเจ้าสิริกิติ์ (ทางเดินลอยฟ้าเหนือเรือนยอดไม้), โป่งแยง จังเกิ้ลโคสเตอร์ และน้ำตกแม่สา 10 ชั้น',
+          food: 'ร้านอาหารข้าวเม่า-ข้าวฟ่าง (Michelin Guide ป่าจินตนาการ), ร้านบ้านม่อนม่วน (อาหารเหนือผักออร์แกนิก) และร้านโป่งแยงแอ่งดอย',
+          cafe: 'Fleur Cafe & Eatery (คาเฟ่สวนกุหลาบสไตล์อังกฤษ), WTF Coffee Camp (คาเฟ่แคมป์ปิ้งริมน้ำตก) และยอดดอยคาเฟ่ม่อนแจ่ม',
+          hotel: 'Four Seasons Resort Chiang Mai (อัลตราลักชัวรีกลางทุ่งนา), Onsen @ Moncham (เรียวกังออนเซ็นญี่ปุ่น) และเต็นท์โดมม่อนแจ่ม'
+        },
+        {
+          id: 6, name: '6. อ.แม่แตง', zone: 'โซนเหนือ (สายน้ำ & พุทธศิลป์)',
+          slogan: 'วัดบ้านเด่นสะหลีศรีเมืองแกน นอนแพเขื่อนแม่งัด ล่องแก่ง และปางช้างแม่แตง',
+          tip: 'ขับรถตามทางหลวง 107 เลี้ยวเข้าเขื่อนแม่งัดหรือเส้นทางแม่ตะมาน ถนนลาดยางสะดวกตลอดสาย',
+          attraction: 'วัดบ้านเด่นสะหลีศรีเมืองแกน (สถาปัตยกรรมล้านนาวิจิตรตระการตา), เขื่อนแม่งัดสมบูรณ์ชล, ล่องแก่งเรือยางแม่แตง, ปางช้างแม่แตง และสวนสนแม่แตง',
+          food: 'ครัวสายน้ำแม่แตง (เมนูปลาแม่น้ำสด), ร้านอาหารริมแก่งแม่แตง และอาหารปลาสดบนแพเขื่อนแม่งัด',
+          cafe: 'Air Diamond Cafe (คาเฟ่บนเครื่องบินแอร์บัส A330 ลำจริง), Stay Wild & Cafe ริมน้ำแม่แตง และกาแฟห้วยกุ๊บกั๊บ',
+          hotel: 'Mountain Float (แพพักหรูกลางน้ำเขื่อนแม่งัด), Phusanfah Resort (ภูสันฟ้า รีสอร์ท) และโฮมสเตย์บ้านห้วยกุ๊บกั๊บ'
+        },
+        {
+          id: 7, name: '7. อ.สะเมิง', zone: 'โซนตะวันตก (หุบเขาสตรอว์เบอร์รี)',
+          slogan: 'เมืองหลวงแห่งสตรอว์เบอร์รี จุดชมวิวป่าสะเมิง และออนเซ็นโป่งกว๊าว',
+          tip: 'ขับรถเส้นวงรอบแม่ริม-สะเมิง-หางดง เป็นเส้นทางโรดทริปชมวิวภูเขาที่สวยที่สุดสายหนึ่งของเชียงใหม่',
+          attraction: 'ไร่สตรอว์เบอร์รีสะเมิง (ไร่วงค์วาน, ไร่นภ-ภูผา เก็บสดจากต้นหน้าหนาว), จุดชมวิวป่าสะเมิง และบ่อน้ำพุร้อนธรรมชาติโป่งกว๊าว',
+          food: 'ร้านอาหารไร่วงค์วาน (ส้มตำสตรอว์เบอร์รี ข้าวผัดสตรอว์เบอร์รี) และครัวสะเมิงอาหารพื้นเมือง',
+          cafe: 'Strawberry Field Cafe (สมูทตี้สตรอว์เบอร์รีสด), Forest Bake Samoeng คาเฟ่เบเกอรี่โฮมเมดกลางป่า',
+          hotel: 'ภูไพรเลค รีสอร์ท, หลองข้าวสะเมิง (เรือนไม้ยุ้งข้าวโบราณริมทุ่งนา) และออนเซ็นโป่งกว๊าวรีสอร์ท'
+        },
+        {
+          id: 8, name: '8. อ.ดอยสะเก็ด', zone: 'โซนตะวันออก (เขื่อน & กาแฟป่า)',
+          slogan: 'สะพานแขวนคู่เขื่อนแม่กวง กาแฟเทพเสด็จ และน้ำพุร้อนธรรมชาติ',
+          tip: 'ใช้ถนนสายเชียงใหม่-เชียงราย (ทล.118) เดินทางออกจากตัวเมืองเพียง 25 นาที',
+          attraction: 'เขื่อนแม่กวงอุดมธารา & สะพานแขวนคู่เชื่อมใจ, วัดพระธาตุดอยสะเก็ด, หมู่บ้านกาแฟเทพเสด็จ (ชมดอกไฮเดรนเยีย) และน้ำพุร้อนดอยสะเก็ด',
+          food: 'แพลุงเจริญ เขื่อนแม่กวง (ปลาคังลวกจิ้ม ต้มยำปลาคังสด) และร้านอาหารคุ้มคำ',
+          cafe: 'ระเบียงนา คาเฟ่ (สะพานไม้กลางทุ่งนา), Pangfan Cafe (ปางแฟน คาเฟ่ริมลำธารหิน) และกาแฟเทพเสด็จ',
+          hotel: 'Tao Garden Health Spa & Resort (รีสอร์ทสุขภาพระดับสากล) และโฮมสเตย์ริมน้ำปางแฟน'
+        },
+        {
+          id: 9, name: '9. อ.สันกำแพง', zone: 'โซนตะวันออก (หัตถกรรม & มิชลิน)',
+          slogan: 'ร่มกระดาษสาบ่อสร้าง น้ำพุร้อนสันกำแพง และร้านข้าว 5 สีรางวัลมิชลิน',
+          tip: 'วิ่งตามถนนสายวัฒนธรรมสันกำแพง (ทล.1006) หรือถนนสันกำแพงสายใหม่ (ทล.1317) เพียง 20 นาทีจากตัวเมือง',
+          attraction: 'ศูนย์หัตถกรรมร่มบ่อสร้าง, น้ำพุร้อนสันกำแพง (ต้มไข่น้ำแร่ แช่เท้าเพื่อสุขภาพ), ถนนคนเดินสันกำแพงวันเสาร์ และวัดทรายมูลพม่า',
+          food: 'มีนา มีข้าว (Meena Rice Based Cuisine - รางวัล Michelin Bib Gourmand ข้าว 5 สีในเรือนไม้ริมทุ่ง) และร้านเสน่ห์ล้านนา',
+          cafe: 'ผักเหมือด คาเฟ่ (คาเฟ่บ้านสวนร่มรื่น), Lamour Cafe (บ้านสีเหลืองสไตล์ยุโรป) และ MAIIAM Cafe',
+          hotel: 'ร่มเย็น รีสอร์ท สันกำแพง, บ้านพักน้ำพุร้อนสันกำแพง และโฮมสเตย์บ้านแม่กำปอง-รอยต่อสันกำแพง'
+        },
+        {
+          id: 10, name: '10. อ.สันทราย', zone: 'โซนเมืองตอนเหนือ (เกษตรอินทรีย์)',
+          slogan: 'ต้นกำเนิดสวนผักโอ้กะจู๋ มหาวิทยาลัยแม่โจ้ และสวนพฤกษศาสตร์ทวีชล',
+          tip: 'อยู่ติดอำเภอเมืองด้านทิศตะวันออกเฉียงเหนือ เดินทางด้วยรถยนต์หรือ Grab เพียง 15-20 นาที',
+          attraction: 'ฟาร์มเกษตรอินทรีย์มหาวิทยาลัยแม่โจ้, สวนพฤกษศาสตร์ทวีชล (เขาวงกตต้นไม้และปั่นจักรยาน) และวัดสันทรายหลวง',
+          food: 'สวนผักโอ้กะจู๋ (สาขาแรกสันทราย สลัดออร์แกนิกและสเต๊กซี่โครงสะพานโค้งจานยักษ์) และร้านลาบสันทรายหอมมะแขว่น',
+          cafe: 'Early Owl (เออร์ลี่ อาวล์ คาเฟ่ในสวนป่าสระน้ำกว้างขวาง), Weave Artisan Society และ Baan Rai Yam Yen',
+          hotel: 'Horizon Village & Resort (ในสวนพฤกษศาสตร์ทวีชล) และ The Kad Farang / San Sai Boutique'
+        },
+        {
+          id: 11, name: '11. อ.หางดง', zone: 'โซนเมืองตอนใต้ (งานไม้ & รีสอร์ทหรู)',
+          slogan: 'หมู่บ้านไม้แกะสลักบ้านถวาย แกรนด์แคนยอนเชียงใหม่ และสตาร์บัคส์ล้านนา',
+          tip: 'ใช้ถนนเชียงใหม่-ฮอด (ทล.108) หรือถนนเลียบคลองชลประทาน เดินทางสะดวกมาก',
+          attraction: 'หมู่บ้านหัตถกรรมไม้แกะสลักบ้านถวาย, แกรนด์แคนยอน วอเตอร์พาร์ค หางดง, วัดต้นเกว๋น (วัดอินทราวาส วิหารไม้ล้านนาต้นแบบชุดไทย) และกาดฝรั่ง (สตาร์บัคส์ล้านนาแห่งเดียวในโลก)',
+          food: 'เฮือนเพ็ญ 2 (สาขาหางดง อาหารเหนือในสวนสวย), ก๋วยเตี๋ยวเป็ดตุ๋นหางดง และร้านอาหารขาหมูเยอรมัน GM',
+          cafe: 'Chic 39 Bed Bar & Bakery (พิซซ่าเตาถ่านกลางทุ่ง), Asama Cafe (กาแฟ Specialty ริมทะเลสาบ) และ Brandnew Field Good',
+          hotel: 'Veranda High Resort Chiang Mai - MGallery (สระว่ายน้ำอินฟินิตี้พูลวิวเขา) และ Flora Creek Chiang Mai (กฤษดาดอย)'
+        },
+        {
+          id: 12, name: '12. อ.สันป่าตอง', zone: 'โซนใต้ (มรดกยูเนสโก)',
+          slogan: 'โรงบ่มยาสูบเก๊าไม้ล้านนามรดกยูเนสโก เมืองโบราณเวียงท่ากาน และกาดงัว',
+          tip: 'ขับรถตามทางหลวง 108 มุ่งหน้าไปทางจอมทอง ห่างจากตัวเมืองประมาณ 30 นาที',
+          attraction: 'Kaomai Estate 1955 (เก๊าไม้ล้านนา อาคารโรงบ่มยาสูบปกคลุมด้วยไม้เลื้อย รางวัลอนุรักษ์มรดกโลก UNESCO), โบราณสถานเวียงท่ากาน และกาดงัวสันป่าตอง (ตลาดนัดเช้าวันเสาร์)',
+          food: 'ร้านอาหารดอยงาม สันป่าตอง, ลาบลุงเป็ง (ลาบคั่วพื้นเมืองแท้) และก๋วยเตี๋ยวต้มยำโบราณทุ่งฟ้าบด',
+          cafe: 'Kaomai Cafe (จิบกาแฟและเค้กโฮมเมดกลางกลุ่มอาคารโรงบ่มยาสูบสีเขียวสุดคลาสสิก)',
+          hotel: 'Kaomai Lanna Resort (ห้องพักดัดแปลงจากโรงบ่มใบยาสูบ ร่มรื่นด้วยต้นไม้ใหญ่อายุนับร้อยปี)'
+        },
+        {
+          id: 13, name: '13. อ.สารภี', zone: 'โซนประวัติศาสตร์ต้นยางร้อยปี',
+          slogan: 'ถนนสายต้นยางนาประวัติศาสตร์ร้อยปี และเมืองโบราณเวียงกุมกาม',
+          tip: 'ใช้ถนนสายเชียงใหม่-ลำพูน (ทล.106) ขับรถชมอุโมงค์ต้นยางนาสูงตระหง่านตลอดสองข้างทาง',
+          attraction: 'ถนนสายต้นยางนาประวัติศาสตร์ (ทล.106 ต้นยางนาอายุกว่าร้อยปี), โบราณสถานเวียงกุมกาม (นั่งรถม้าชมอดีตเมืองหลวงล้านนา) และวัดพระนอนหนองผึ้ง',
+          food: 'ข้าวมันไก่แดนข้าวมันไก่ (สาขาสารภี ไก่ตอนเนื้อนุ่มคิวยาว) และก๋วยเตี๋ยวโบราณสารภี',
+          cafe: 'Yangna Cafe (ยางนา คาเฟ่ริมทุ่งนา), Kaffe 151 และบ้านสวนกาแฟสารภี',
+          hotel: 'Baan Gong Kham Boutique (เรือนไม้ล้านนาโบราณ) และรีสอร์ทริมแม่น้ำปิงโซนสารภี'
+        },
+        {
+          id: 14, name: '14. อ.แม่วาง', zone: 'โซนตะวันตก (ล่องแพ & ผาช่อ)',
+          slogan: 'ล่องแพไม้ไผ่ลำน้ำแม่วาง แกรนด์แคนยอนผาช่อ และวิถีช้างอนุรักษ์',
+          tip: 'เดินทางจากสันป่าตองเลี้ยวเข้าเส้นทางแม่วาง ขับรถประมาณ 45-50 นาทีจากตัวเมือง',
+          attraction: 'ล่องแพไม้ไผ่ลำน้ำแม่วาง (น้ำใสไหลเย็น), ผาช่อ อุทยานแห่งชาติแม่วาง (หน้าผาเสาดินธรรมชาติสูง 30 เมตร Unseen) และศูนย์อนุรักษ์ช้างแม่วาง',
+          food: 'ซุ้มร้านอาหารริมน้ำแม่วาง (ไก่ย่างเตาถ่าน ส้มตำ ปลาเผา นั่งทานเอาขาจุ่มน้ำเย็นฉ่ำ)',
+          cafe: 'Mae Wang Riverside Cafe, Kew Tara Cafe (กิ่วธารา คาเฟ่ริมลำธาร) และหลงป่า คาเฟ่',
+          hotel: 'The River Flows Camp แม่วาง (แคมป์ปิ้งริมน้ำ) และโฮมสเตย์บ้านสบวิน'
+        },
+        {
+          id: 15, name: '15. อ.ดอยหล่อ', zone: 'โซนใต้ (ริมน้ำปิง & ผาคันนา)',
+          slogan: 'วัดพระธาตุดอยน้อยสมัยพระนางจามเทวี และประติมากรรมธรรมชาติผาคันนา',
+          tip: 'อยู่ริมทางหลวงหมายเลข 108 ก่อนถึงอำเภอจอมทอง แวะเที่ยวระหว่างทางขึ้นดอยอินทนนท์ได้พอดี',
+          attraction: 'วัดพระธาตุดอยน้อย (สร้างสมัยพระนางจามเทวี บันไดนาคชมวิวแม่น้ำปิง), ผาคันนา (หน้าผาดินธรรมชาติ) และพิพิธภัณฑ์พระพิฆเนศ',
+          food: 'ร้านอาหารริมปิงดอยหล่อ (ปลาแม่น้ำปิงทอดกระเทียม ต้มยำปลาคัง) และข้าวซอยบ้านดิน',
+          cafe: 'Doi Lo River Coffee (จิบกาแฟริมแม่น้ำปิง) และ Baan Din Cafe คาเฟ่บ้านดิน',
+          hotel: 'ดอยหล่อ ริเวอร์ไซด์ รีสอร์ท และโฮมสเตย์สวนลำไยดอยหล่อ'
+        },
+        {
+          id: 16, name: '16. อ.ฮอด', zone: 'โซนใต้ (ออบหลวง & สวนสน)',
+          slogan: 'ช่องแคบเขาหินออบหลวง และทิวสนสามใบเกาะนามิเมืองไทย สวนสนบ่อแก้ว',
+          tip: 'ใช้ทางหลวง 108 ลงใต้ผ่านจอมทองสู่อำเภอฮอด ต่อด้วยทางหลวง 108 สายฮอด-แม่สะเรียง',
+          attraction: 'อุทยานแห่งชาติออบหลวง (ช่องแคบผาหิน "ผาจูบกัน" ลำน้ำแม่แจ่มเชี่ยวกราก), สวนสนบ่อแก้ว (ทิวสนสามใบเรียงรายสวยเหมือนเกาะนามิเกาหลี) และวัดพระธาตุศรีดอยคำ',
+          food: 'ครัวออบหลวง (ต้มยำปลากดคัง แกงส้มปลาแม่น้ำ) และก๋วยเตี๋ยวต้มยำหมูโบราณเมืองฮอด',
+          cafe: 'Pine Tree Coffee (รถกาแฟดริปใต้ร่มเงาป่าสนบ่อแก้ว) และ Hod Riverside Coffee',
+          hotel: 'บ้านพักอุทยานแห่งชาติออบหลวง และ ฮอด ฮิลล์ รีสอร์ท'
+        },
+        {
+          id: 17, name: '17. อ.ดอยเต่า', zone: 'โซนใต้สุด (ทะเลสาบเหนือเขื่อน)',
+          slogan: 'มนต์เสน่ห์ทะเลสาบดอยเต่า นอนแพลอยน้ำ และสวรรค์เมนูปลาแม่น้ำสด',
+          tip: 'จากอำเภอฮอดใช้ทางหลวง 1103 มุ่งหน้าสู่ทะเลสาบดอยเต่า ถนนลาดยางวิวสวยตลอดทาง',
+          attraction: 'ทะเลสาบดอยเต่า (อ่างเก็บน้ำกว้างใหญ่เหนือเขื่อนภูมิพล ล่องแพชมพระอาทิตย์ตกดิน), วัดพระพุทธบาทตะเลาะ และวิถีประมงพื้นบ้าน',
+          food: 'เรือนแพอาหารดอยเต่า (ปลากดคังลวกจิ้ม กุ้งฝอยทอดแพ ปลากรอบทอดสมุนไพรสดจากทะเลสาบ)',
+          cafe: 'Doi Tao Lake View Cafe (จิบกาแฟชมวิวผืนน้ำกว้างสุดสายตา)',
+          hotel: 'แพพักลอยน้ำทะเลสาบดอยเต่า (นอนแพฟังเสียงน้ำ ตกปลาหน้าแพ) และดอยเต่า ฟาร์มสเตย์'
+        },
+        {
+          id: 18, name: '18. อ.อมก๋อย', zone: 'โซนตะวันตกเฉียงใต้ (สวรรค์นักเดินป่า)',
+          slogan: 'พิชิตทุ่งหญ้าสีทองดอยม่อนจอง ม่อนทูเล และกาแฟออร์แกนิกใต้ร่มป่า',
+          tip: 'เดินทางจากอำเภอฮอดเข้าทางหลวง 1099 สู่อมก๋อย การขึ้นดอยม่อนจองต้องติดต่อศูนย์บริการนักท่องเที่ยวชุมชนมูเซอเพื่อใช้รถ 4WD และลูกหาบ',
+          attraction: 'ดอยม่อนจอง (ยอดหัวสิงห์ ทุ่งหญ้าสีทอง กุหลาบพันปี และถิ่นเลียงผา), ม่อนทูเล-ม่อนคลุย และชุมชนชาวกะเหรี่ยงโปว์',
+          food: 'ร้านอาหารน้องแป้ง อมก๋อย (แกงแคไก่บ้าน อาหารพื้นเมือง) และร้านลาบอมก๋อยรสเด็ด',
+          cafe: 'Omkoi Specialty Coffee (กาแฟอาราบิก้าอินทรีย์อมก๋อย หอมละมุนระดับพรีเมียม)',
+          hotel: 'แคมป์ปิ้งกางเต็นท์บนดอยม่อนจอง/ม่อนทูเล และ อมก๋อย รีสอร์ท ในตัวอำเภอ'
+        },
+        {
+          id: 19, name: '19. อ.ฝาง', zone: 'โซนเหนือสุด (อ่างขาง & น้ำพุร้อน)',
+          slogan: 'สถานีเกษตรหลวงอ่างขาง ไร่ชา 2000 น้ำพุร้อนฝาง และสุกี้ยูนนาน',
+          tip: 'ใช้ทางหลวงหมายเลข 107 (เชียงใหม่-ฝาง) หรือขึ้นดอยอ่างขางทางจุดชมวิวม่อนสน ถนนลาดยางมาตรฐาน',
+          attraction: 'สถานีเกษตรหลวงอ่างขาง (ซากุระเมืองไทย ดอกพญาเสือโคร่ง ไร่ชา 2000), อุทยานแห่งชาติดอยผ้าห่มปก & บ่อน้ำพุร้อนฝาง และสวนส้มธนาธร',
+          food: 'สุกี้ยูนนานดอยอ่างขาง (หม้อไฟโบราณ ขาหมูหมั่นโถว เห็ดหอมสดผัดน้ำมันหอย) และภัตตาคารฝาง',
+          cafe: '2000 Tea Plantation Cafe (จิบชาอู่หลงกลางสายหมอกไร่ชา 2000) และ Fang Cafe House',
+          hotel: 'Angkhang Nature Resort, ลานกางเต็นท์ม่อนสนดอยอ่างขาง และ Tangerine Ville Hotel ในตัวเมืองฝาง'
+        },
+        {
+          id: 20, name: '20. อ.แม่อาย', zone: 'โซนเหนือสุด (ริมแม่น้ำกก)',
+          slogan: 'เจดีย์แก้ววัดท่าตอน 9 ชั้น ล่องเรือแม่น้ำกก และดูนกหายากดอยลาง',
+          tip: 'อยู่ถัดจากอำเภอฝางขึ้นไปตามทางหลวง 107 เชื่อมต่อไปยังจังหวัดเชียงรายทางแม่น้ำกกได้',
+          attraction: 'วัดท่าตอน พระอารามหลวง (เจดีย์แก้ว 9 ชั้นบนยอดเขา ชมวิวโค้งแม่น้ำกกและพรมแดนเมียนมา), ดอยลาง (สวรรค์นักดูนกระดับโลก) และล่องเรือหางยาวแม่น้ำกก',
+          food: 'ครัวริมกก ท่าตอน (ปลาบึกผัดฉ่า ต้มยำปลาคังแม่น้ำกก) และร้านอาหารเรือนแพท่าตอน',
+          cafe: 'Tha Ton River View Cafe (จิบกาแฟชมสะพานและแม่น้ำกก) และกาแฟดอยลาง',
+          hotel: 'Baan Tha Ton River View Resort และ Khun Mai Baan Suan Resort'
+        },
+        {
+          id: 21, name: '21. อ.ไชยปราการ', zone: 'โซนเหนือ (สวนส้ม & ถ้ำศักดิ์สิทธิ์)',
+          slogan: 'แผ่นดินประวัติศาสตร์พระเจ้าพรหมมหาราช วัดถ้ำตับเตา และสวนส้มสายน้ำผึ้ง',
+          tip: 'ตั้งอยู่บนทางหลวง 107 ระหว่างอำเภอเชียงดาวและอำเภอฝาง แวะเที่ยวง่ายติดถนนสายหลัก',
+          attraction: 'วัดถ้ำตับเตา (พระพุทธรูปโบราณในโถงถ้ำหินปูนและลำธารร่มรื่น), วัดป่าไม้แดง (อนุสาวรีย์พระเจ้าพรหมมหาราช) และสวนส้มสายน้ำผึ้งไชยปราการ',
+          food: 'ครัวข้าวหอม ไชยปราการ และร้านอาหารไชยปราการโภชนา (ต้มยำปลาคัง ข้าวซอยไก่)',
+          cafe: 'Orange Farm Cafe (เค้กส้มสดและน้ำส้มสายน้ำผึ้งคั้นสดแท้ 100% กลางสวนส้ม)',
+          hotel: 'ดอยเวียง รีสอร์ท ไชยปราการ และโฮมสเตย์สวนส้มไชยปราการ'
+        },
+        {
+          id: 22, name: '22. อ.พร้าว', zone: 'โซนเหนือ (หุบเขาสโลว์ไลฟ์)',
+          slogan: 'เมืองสงบกลางอ้อมกอดขุนเขา วัดพระเจ้าล้านทอง และอ่างเก็บน้ำแม่โก๋น',
+          tip: 'ใช้ทางหลวงหมายเลข 1001 (เชียงใหม่-พร้าว) ผ่านแม่โจ้ มุ่งตรงสู่หุบเขาเมืองพร้าว',
+          attraction: 'อ่างเก็บน้ำแม่โก๋น (วิวทิวเขาสะท้อนน้ำ), วัดพระเจ้าล้านทอง, วัดดอยแม่ปั๋ง (หลวงปู่แหวน สุจิณโณ) และนาขั้นบันไดบ้านผาเด่น',
+          food: 'ร้านอาหารบ้านพร้าว (ลาบคั่วเมืองเหนือ ปลาทับทิมทอดสมุนไพร) และส้มตำหน้าวัด',
+          cafe: 'Phrao Valley Cafe (คาเฟ่วิวทุ่งนาและภูเขา) และกาแฟสดห้วยงู',
+          hotel: 'Phrao Camping Village และโฮมสเตย์ชุมชนเมืองพร้าว'
+        },
+        {
+          id: 23, name: '23. อ.เวียงแหง', zone: 'โซนเหนือตะวันตก (รอยอดีตพระนเรศวร)',
+          slogan: 'พระบรมธาตุแสนไห วัดสองแผ่นดินฟ้าเวียงอินทร์ และวัฒนธรรมไทใหญ่',
+          tip: 'แยกจากอำเภอเชียงดาวไปตามทางหลวง 1322 ถนนลัดเลาะขุนเขาวิวธรรมชาติบริสุทธิ์',
+          attraction: 'พระบรมธาตุแสนไห, วัดฟ้าเวียงอินทร์ (วัดสองแผ่นดินตั้งอยู่สุดเขตแดนไทย-เมียนมา) และอนุสรณ์สถานสมเด็จพระนเรศวรมหาราช (เมืองงาย-เวียงแหง)',
+          food: 'ร้านอาหารไทใหญ่เวียงแหง (ข้าวแรมฟืน ถั่วพูอุ่น ยำหมี่ไทใหญ่แท้) และครัวเวียงแหง',
+          cafe: 'Wiang Haeng Hill Coffee และ Tai Yai Tea & Coffee House',
+          hotel: 'เวียงแหง ริเวอร์ไซด์ โฮมสเตย์ และบ้านสวนดอยเวียงแหง'
+        },
+        {
+          id: 24, name: '24. อ.แม่ออน', zone: 'โซนตะวันออก (หมู่บ้านริมลำธาร)',
+          slogan: 'สโลว์ไลฟ์หมู่บ้านแม่กำปอง-แม่ลาย น้ำพุร้อนแม่ออน และคาเฟ่บนต้นไม้ยักษ์',
+          tip: 'เดินทางจากตัวเมืองเพียง 50 นาที หรือขึ้นรถตู้ประจำทางสายตลาดวโรรส-น้ำพุร้อนสันกำแพง-แม่กำปอง',
+          attraction: 'หมู่บ้านแม่กำปอง (บ้านไม้ริมลำธารไหลเย็นตลอดปี วัดคันธาพฤกษา โบสถ์กลางน้ำ), หมู่บ้านแม่ลาย, ถ้ำเมืองออน และน้ำพุร้อนแม่ออน',
+          food: 'ไส้อั่วป้าเขียว แม่กำปอง (ย่างเตาถ่านหอมสมุนไพร), ร้านระเบียงวิว, ข้าวซอยกลอยใจ และไข่ป่ามริมทางเดิน',
+          cafe: 'The Giant Chiangmai (คาเฟ่บนต้นไม้ยักษ์), Atlantis Valley (บ้านแม่ลาย ฟีลป่าสนยุโรป) และ Teddu Coffee ริมน้ำตกแม่กำปอง',
+          hotel: 'โฮมสเตย์ชาวบ้านแม่กำปอง (นอนฟังเสียงลำธาร), The River Maulai (พูลวิลล่าหรูบ้านแม่ลาย) และ Woo Ma Ca Moo'
+        },
+        {
+          id: 25, name: '25. อ.กัลยาณิวัฒนา', zone: 'โซนตะวันตก (ป่าสนวัดจันทร์)',
+          slogan: 'ป่าสนสามใบผืนใหญ่ที่สุดในเอเชียตะวันออกเฉียงใต้ และใบเมเปิ้ลเปลี่ยนสี',
+          tip: 'ใช้เส้นทางสะเมิง-วัดจันทร์ (ทล.1349) หรือเส้นทางปาย-วัดจันทร์ อากาศหนาวเย็นตลอดปี',
+          attraction: 'โครงการหลวงบ้านวัดจันทร์ & ป่าสนวัดจันทร์ (ชมสายหมอกลอยเหนืออ่างเก็บน้ำและใบเมเปิ้ลเปลี่ยนสีช่วง ธ.ค.-ม.ค.), วัดจันทร์ (วิหารไม้สักใส่แว่นตาแห่งเดียวในไทย) และอ่างเก็บน้ำห้วยอ้อ',
+          food: 'สโมสรโครงการหลวงบ้านวัดจันทร์ (ฟักทองญี่ปุ่นอบ ผักเมืองหนาวสดกรอบ ปลาเทรุตทอด) และข้าวเบ๊อะอาหารชนเผ่าปกาเกอะญอ',
+          cafe: 'Wat Chan Royal Project Coffee (จิบกาแฟอาราบิก้าร้อนๆ ท่ามกลางอุณหภูมิเลขตัวเดียว)',
+          hotel: 'บ้านพัก อ.อ.ป. ป่าสนวัดจันทร์ (กระท่อมไม้สนมีเตาผิงกลางป่าสน) และโฮมสเตย์ชุมชนบ้านวัดจันทร์'
+        }
+      ];
+
+      // ฟังก์ชันแปลงข้อความยาวๆ เป็นรายการการ์ดย่อยพร้อมป้าย Badge ไฮไลต์
+      const formatRichList = (text) => {
+        const parts = text.split(/,\s*|\s+และ(?=[^\s])/g).map(s => s.trim()).filter(Boolean);
+        return parts.map((item, i) => {
+          let badgeHtml = '';
+          if (/Michelin|มิชลิน/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-blushed-brick text-white font-heading text-[10px] font-bold uppercase">🏆 Michelin</span>`;
+          } else if (/UNESCO|ยูเนสโก/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-hunter-green text-yellow-green font-heading text-[10px] font-bold uppercase">🌍 UNESCO</span>`;
+          } else if (/Unseen|ลับ|แห่งเดียว/i.test(item)) {
+            badgeHtml = `<span class="ml-1.5 px-2 py-0.5 rounded bg-sage-green text-white font-heading text-[10px] font-bold uppercase">✨ Unseen</span>`;
+          }
+          return `
+            <li class="flex items-start gap-2.5 p-2.5 rounded-xl bg-nature-50 border border-hunter-green/20 hover:bg-vanilla-cream/60 transition">
+              <span class="w-5 h-5 rounded-md bg-hunter-green text-vanilla-cream font-heading text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">${i + 1}</span>
+              <span class="text-xs sm:text-sm text-nature-800 font-medium leading-relaxed">${item}${badgeHtml}</span>
+            </li>
+          `;
+        }).join('');
+      };
+
+      const btnContainer = document.getElementById('districtButtonsContainer');
+      const detailBoard = document.getElementById('districtDetailBoard');
+      const zoneBadge = document.getElementById('distZoneBadge');
+      const nameTitle = document.getElementById('distNameTitle');
+      const sloganEl = document.getElementById('distSlogan');
+      const tipEl = document.getElementById('distTip');
+      const attrEl = document.getElementById('distAttraction');
+      const foodEl = document.getElementById('distFood');
+      const cafeEl = document.getElementById('distCafe');
+      const hotelEl = document.getElementById('distHotel');
+      const counterBadge = document.getElementById('distCounterBadge');
+      const prevBtn = document.getElementById('prevDistBtn');
+      const nextBtn = document.getElementById('nextDistBtn');
+      const searchInput = document.getElementById('districtSearchInput');
+
+      let currentIndex = 0;
+
+      const updateActiveButtonStyles = () => {
+        document.querySelectorAll('.dist-pill').forEach((p, idx) => {
+          p.className = idx === currentIndex
+            ? 'dist-pill px-3.5 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold transition-all bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749]'
+            : 'dist-pill px-3.5 py-2 rounded-xl font-heading text-xs sm:text-sm font-semibold transition-all bg-vanilla-cream/70 text-hunter-green border-2 border-hunter-green/30 hover:border-hunter-green hover:bg-yellow-green/40';
+        });
+      };
+
+      const renderDistrict = (idx) => {
+        currentIndex = (idx + districtsData.length) % districtsData.length;
+        const distObj = districtsData[currentIndex];
+
+        detailBoard.classList.remove('animate-fade-slide');
+        void detailBoard.offsetWidth;
+        detailBoard.classList.add('animate-fade-slide');
+
+        zoneBadge.textContent = distObj.zone;
+        nameTitle.textContent = distObj.name;
+        sloganEl.textContent = distObj.slogan;
+        tipEl.textContent = distObj.tip;
+        attrEl.innerHTML = formatRichList(distObj.attraction);
+        foodEl.innerHTML = formatRichList(distObj.food);
+        cafeEl.innerHTML = formatRichList(distObj.cafe);
+        hotelEl.innerHTML = formatRichList(distObj.hotel);
+        counterBadge.textContent = `${currentIndex + 1} / ${districtsData.length}`;
+        updateActiveButtonStyles();
+      };
+
+      districtsData.forEach((d, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = d.name;
+        btn.setAttribute('data-search', `${d.name} ${d.zone} ${d.slogan} ${d.attraction} ${d.food} ${d.cafe} ${d.hotel}`.toLowerCase());
+        btn.addEventListener('click', () => renderDistrict(idx));
+        btnContainer.appendChild(btn);
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', () => renderDistrict(currentIndex - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => renderDistrict(currentIndex + 1));
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.trim().toLowerCase();
+          let firstMatchIdx = -1;
+          document.querySelectorAll('.dist-pill').forEach((btn, idx) => {
+            const match = !q || btn.getAttribute('data-search').includes(q);
+            btn.classList.toggle('hidden', !match);
+            if (match && firstMatchIdx === -1) firstMatchIdx = idx;
+          });
+          if (q && firstMatchIdx !== -1 && firstMatchIdx !== currentIndex) {
+            renderDistrict(firstMatchIdx);
+          }
+        });
+      }
+
+      renderDistrict(0);
+
+      // 4. ระบบกรองหมวดหมู่
+      const catBtns = document.querySelectorAll('.cat-filter-btn');
+      const catCards = document.querySelectorAll('.dist-cat-card');
+
+      catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetCat = btn.getAttribute('data-cat');
+          catBtns.forEach(b => {
+            b.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-white text-hunter-green border-2 border-hunter-green hover:bg-yellow-green/40 transition';
+          });
+          btn.className = 'cat-filter-btn px-4 py-2 rounded-xl font-heading text-xs sm:text-sm font-bold bg-hunter-green text-vanilla-cream border-2 border-hunter-green shadow-[3px_3px_0px_#BC4749] transition';
+
+          catCards.forEach(card => {
+            card.classList.toggle('hidden', !(targetCat === 'all' || card.getAttribute('data-card-cat') === targetCat));
+          });
+        });
+      });
+
+      // 5. Lightbox Modal
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+
+      document.querySelectorAll('.gallery-postcard').forEach(card => {
+        card.addEventListener('click', () => {
+          const img = card.querySelector('img');
+          if (img && lightboxModal) {
+            lightboxImg.src = img.src;
+            lightboxCaption.textContent = card.getAttribute('data-caption') || img.alt;
+            lightboxModal.classList.remove('hidden');
+          }
+        });
+      });
+      if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', () => lightboxModal.classList.add('hidden'));
+      if (lightboxModal) lightboxModal.addEventListener('click', (e) => { if (e.target === lightboxModal) lightboxModal.classList.add('hidden'); });
+
+      // 6. Scroll Shadow
+      const mainHeader = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        mainHeader.classList.toggle('shadow-xl', window.scrollY > 20);
+      });
+
+      // 7. ระบบ Hero Scenery Slider (เลื่อนดูภาพทัศนียภาพประจำจังหวัด)
+      const heroSlides = document.querySelectorAll('.hero-slide');
+      const heroDots = document.querySelectorAll('.hero-dot');
+      const heroPrevBtn = document.getElementById('heroPrevBtn');
+      const heroNextBtn = document.getElementById('heroNextBtn');
+      const heroSlideCounter = document.getElementById('heroSlideCounter');
+      const heroSlideRegionBadge = document.getElementById('heroSlideRegionBadge');
+      const heroSliderContainer = document.getElementById('heroSliderContainer');
+
+      let currentHeroIndex = 0;
+      let heroSlideTimer = null;
+
+      const setHeroSlide = (idx) => {
+        if (!heroSlides.length) return;
+        currentHeroIndex = (idx + heroSlides.length) % heroSlides.length;
+        heroSlides.forEach((slide, i) => {
+          if (i === currentHeroIndex) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100', 'pointer-events-auto');
+            if (heroSlideRegionBadge) {
+              heroSlideRegionBadge.textContent = slide.getAttribute('data-region') || '';
+            }
+          } else {
+            slide.classList.remove('opacity-100', 'pointer-events-auto');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+        heroDots.forEach((dot, i) => {
+          dot.className = i === currentHeroIndex
+            ? 'hero-dot w-5 h-2 rounded-full bg-yellow-green transition-all cursor-pointer'
+            : 'hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all cursor-pointer';
+        });
+        if (heroSlideCounter) {
+          heroSlideCounter.textContent = `${currentHeroIndex + 1} / ${heroSlides.length}`;
+        }
+      };
+
+      const stopHeroSlideTimer = () => {
+        if (heroSlideTimer) clearInterval(heroSlideTimer);
+      };
+      const startHeroSlideTimer = () => {
+        stopHeroSlideTimer();
+        heroSlideTimer = setInterval(() => setHeroSlide(currentHeroIndex + 1), 5000);
+      };
+
+      if (heroPrevBtn) {
+        heroPrevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          setHeroSlide(currentHeroIndex - 1);
+          startHeroSlideTimer();
+        });
+      }
+      if (heroNextBtn) {
+        heroNextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          setHeroSlide(currentHeroIndex + 1);
+          startHeroSlideTimer();
+        });
+      }
+      heroDots.forEach((dot, i) => {
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          setHeroSlide(i);
+          startHeroSlideTimer();
+        });
+      });
+      if (heroSliderContainer) {
+        heroSliderContainer.addEventListener('mouseenter', stopHeroSlideTimer);
+        heroSliderContainer.addEventListener('mouseleave', startHeroSlideTimer);
+        let touchStartX = 0;
+        heroSliderContainer.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+          stopHeroSlideTimer();
+        }, { passive: true });
+        heroSliderContainer.addEventListener('touchend', (e) => {
+          const diff = touchStartX - e.changedTouches[0].screenX;
+          if (Math.abs(diff) > 40) {
+            setHeroSlide(diff > 0 ? currentHeroIndex + 1 : currentHeroIndex - 1);
+          }
+          startHeroSlideTimer();
+        }, { passive: true });
+      }
+      setHeroSlide(0);
+      startHeroSlideTimer();
+    });
+  </script>
+</body>
+</html>
